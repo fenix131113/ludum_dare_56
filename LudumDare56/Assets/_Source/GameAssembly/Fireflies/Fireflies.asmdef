@@ -1,0 +1,16 @@
+{
+    "name": "Fireflies",
+    "rootNamespace": "",
+    "references": [
+        "GUID:cbe18ac50f9750547af572fdcf026ff0"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

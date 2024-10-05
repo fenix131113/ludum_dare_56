@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2def134520ee42f2a02034f4299bdcc7, type: 3}
   m_Name: BasePlayerConfig
   m_EditorClassIdentifier: 
-  <FirefliesSpeed>k__BackingField: 4
+  <FirefliesSpeed>k__BackingField: 2

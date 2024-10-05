@@ -25,7 +25,7 @@ namespace PlayerMovement
 			//if (moveVector.magnitude == 0)
 				//_rb.velocity = Vector2.zero;
 			//else
-				_rb.AddForce(new Vector2(moveVector.x, moveVector.y) * _config.FirefliesSpeed, ForceMode2D.Force);
+				_rb.AddForce(new Vector2(moveVector.x, moveVector.y) * (Time.deltaTime * _config.FirefliesSpeed * 1000), ForceMode2D.Force);
 		}
 	}
 }
