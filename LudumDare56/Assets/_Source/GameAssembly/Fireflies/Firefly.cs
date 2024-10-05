@@ -22,15 +22,11 @@ namespace Fireflies
 
 			if (!withPlayer)
 				MoveToPlayer();
-		}
-
-		private void Awake()
-		{
-			if (!withPlayer)
-				return;
-
-			GenerateMovement();
-			StartCoroutine(ChangeDirectionTimer());
+			else
+			{
+				GenerateMovement();
+				StartCoroutine(ChangeDirectionTimer());
+			}
 		}
 
 		private void MoveToPlayer()
