@@ -11,11 +11,8 @@
         private void OnTriggerEnter2D(Collider2D collision)
         {
             if (!LayerService.CheckLayersEquality(collision.gameObject.layer, collisionMask)) return;
-            
-            if(rotateRight)
-                enemy.RotateRight();
-            else
-                enemy.RotateLeft();
+
+            enemy.SetMoveRotate(rotateRight);
         }
     }
 }

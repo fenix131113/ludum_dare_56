@@ -6,5 +6,6 @@ namespace Enemies.Data
 	public class EnemyConfig : ScriptableObject
 	{
 		[field: SerializeField] public float speed;
+		[field: SerializeField] public float runSpeed;
 	}
 }
