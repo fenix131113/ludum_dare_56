@@ -13,7 +13,7 @@ namespace Fireflies
 		public FirefliesInvisible InvisibleModule { get; private set; }
 
 		private CircleCollider2D _circleCollider;
-
+		
 		private void Awake()
 		{
 			_circleCollider = GetComponent<CircleCollider2D>();
@@ -40,12 +40,6 @@ namespace Fireflies
 		{
 			InvisibleModule.Show(fireflies);
 			playerCollider.enabled = true;
-		}
-
-		private void Update()
-		{
-			if(Input.GetKeyDown(KeyCode.F))
-				AddFirefly(new Vector3(_circleCollider.transform.position.x, _circleCollider.transform.position.y - 10, 0));
 		}
 	}
 }

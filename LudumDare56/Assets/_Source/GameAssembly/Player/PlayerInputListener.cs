@@ -2,6 +2,7 @@ using Core.Data;
 using Core.Game;
 using Fireflies;
 using Knight;
+using Unity.Plastic.Antlr3.Runtime.Misc;
 using UnityEngine;
 using Zenject;
 
@@ -13,6 +14,8 @@ namespace Player
 		private readonly FirefliesContainer _firefliesContainer;
 		private readonly GameStates _gameStates;
 		private readonly KnightMovement _knightMovement;
+
+		public event Action OnInteractiveKeyPressed;
 
 		[Inject]
 		private PlayerInputListener(FirefliesMovement firefliesMovement, FirefliesContainer firefliesContainer,
@@ -26,6 +29,8 @@ namespace Player
 
 		public void Tick()
 		{
+			ReadInteractiveKey();
+
 			if (_gameStates.PlayerType == PlayerType.FIREFLIES)
 			{
 				ReadFirefliesMovementInput();
@@ -37,10 +42,16 @@ namespace Player
 			}
 		}
 
+		private void ReadInteractiveKey()
+		{
+			if (Input.GetKeyDown(KeyCode.E))
+				OnInteractiveKeyPressed?.Invoke();
+		}
+
 		private void ReadKnightMovementInput()
 		{
 			var moveVector = new Vector2(Input.GetAxisRaw("Horizontal"), 0);
-			
+
 			_knightMovement.Move(moveVector);
 		}
 

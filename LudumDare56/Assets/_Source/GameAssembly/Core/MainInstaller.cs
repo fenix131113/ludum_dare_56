@@ -1,16 +1,21 @@
 using Core.Game;
 using Fireflies;
+using Fireflies.Data;
 using Knight;
 using Player;
 using Player.Data;
 using UnityEngine;
 using Zenject;
+using UnityEngine.Rendering;
 
 namespace Core
 {
     public class MainInstaller : MonoInstaller
     {
         [SerializeField] private PlayerConfig playerConfig;
+        [SerializeField] private FirefliesConfig firefliesConfig;
+        
+        [SerializeField] private VolumeProfile postProcessVolume;
         
         public override void InstallBindings()
         {
@@ -33,12 +38,34 @@ namespace Core
             Container.Bind<GameStates>()
                 .AsSingle()
                 .NonLazy();
+            
+            Container.Bind<VolumeProfile>()
+                .FromInstance(postProcessVolume)
+                .AsSingle()
+                .NonLazy();
         }
 
         private void BindFireflies()
         {
             Container.Bind<FirefliesContainer>()
                 .FromComponentInHierarchy()
+                .AsSingle()
+                .NonLazy();
+
+            Container.Bind<FirefliesHealth>()
+                .AsSingle()
+                .NonLazy();
+
+            Container.BindInterfacesAndSelfTo<HealthLightChecker>()
+                .AsSingle()
+                .NonLazy();
+
+            Container.Bind<FirefliesConfig>()
+                .FromInstance(firefliesConfig)
+                .AsSingle()
+                .NonLazy();
+
+            Container.BindInterfacesTo<FirefliesHealthIndicator>()
                 .AsSingle()
                 .NonLazy();
         }
