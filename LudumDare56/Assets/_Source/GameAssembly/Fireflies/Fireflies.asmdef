@@ -2,7 +2,8 @@
     "name": "Fireflies",
     "rootNamespace": "",
     "references": [
-        "GUID:cbe18ac50f9750547af572fdcf026ff0"
+        "GUID:cbe18ac50f9750547af572fdcf026ff0",
+        "GUID:4e8d751a4128471385dca87fb6cdd835"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

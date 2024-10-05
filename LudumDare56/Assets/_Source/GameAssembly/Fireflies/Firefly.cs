@@ -1,37 +1,51 @@
 ﻿using System.Collections;
 using UnityEngine;
 using DG.Tweening;
+using Fireflies.Data;
 
 namespace Fireflies
 {
 	public class Firefly : MonoBehaviour
 	{
-		[SerializeField] private Ease ease;
-		[SerializeField] private float minTime;
-		[SerializeField] private float maxTime;
-		[SerializeField] private float speed;
-		[SerializeField] private float minChangeDirectionTime;
-		[SerializeField] private float maxChangeDirectionTime;
+		[SerializeField] private FirefliesConfig config;
+		[SerializeField] private bool withPlayer;
 
 		private Vector3 _currentDirection;
+		private CircleCollider2D _firefliesGroupCollider;
 
 		private void Awake()
 		{
-			GenerateDirection();
-			StartCoroutine(ChangeDirectionTimer());
+			if (!withPlayer)
+				MoveToPlayer();
+			else
+			{
+				GenerateMovement();
+				StartCoroutine(ChangeDirectionTimer());
+			}
 		}
 
-		private void GenerateDirection()
+		private void MoveToPlayer()
 		{
-			var point = Random.insideUnitCircle / 2;
-			transform.DOLocalMove(new Vector3(point.x, point.y, 0), Random.Range(minTime, maxTime)).SetEase(ease);
+			transform.DOLocalMove(Vector3.zero, config.MinMoveTime).SetEase(config.EaseType)
+				.onComplete += () =>
+			{
+				GenerateMovement();
+				StartCoroutine(ChangeDirectionTimer());
+			};
+		}
+
+		private void GenerateMovement()
+		{
+			var point = Random.insideUnitCircle * _firefliesGroupCollider.radius;
+			transform.DOLocalMove(new Vector3(point.x, point.y, 0),
+				Random.Range(config.MinMoveTime, config.MaxMoveTime)).SetEase(config.EaseType);
 		}
 
 		// ReSharper disable once FunctionRecursiveOnAllPaths
 		private IEnumerator ChangeDirectionTimer()
 		{
-			yield return new WaitForSeconds(Random.Range(minChangeDirectionTime, maxChangeDirectionTime));
-			GenerateDirection();
+			yield return new WaitForSeconds(Random.Range(config.MinChangeDirectionTime, config.MaxChangeDirectionTime));
+			GenerateMovement();
 			StartCoroutine(ChangeDirectionTimer());
 		}
 	}

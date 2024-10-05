@@ -98,12 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4691f47b20b04c3db9e8f4edc0fc3905, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ease: 4
-  minTime: 0.4
-  maxTime: 0.8
-  speed: 5
-  minChangeDirectionTime: 0.4
-  maxChangeDirectionTime: 0.8
+  config: {fileID: 11400000, guid: d581820c53da2b146b1345fb7ee262cf, type: 2}
 --- !u!1 &5954855496856806336
 GameObject:
   m_ObjectHideFlags: 0

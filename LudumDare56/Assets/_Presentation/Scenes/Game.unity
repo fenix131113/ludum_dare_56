@@ -668,6 +668,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2101180583}
     m_Modifications:
+    - target: {fileID: 544007186174457610, guid: de70170c86516964fb05f1b0de531325, type: 3}
+      propertyPath: withPlayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4800456682484645166, guid: de70170c86516964fb05f1b0de531325, type: 3}
       propertyPath: m_Name
       value: Firefly (1)
@@ -730,6 +734,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2101180583}
     m_Modifications:
+    - target: {fileID: 544007186174457610, guid: de70170c86516964fb05f1b0de531325, type: 3}
+      propertyPath: withPlayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4800456682484645166, guid: de70170c86516964fb05f1b0de531325, type: 3}
       propertyPath: m_Name
       value: Firefly (3)
@@ -1118,6 +1126,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2101180583}
     m_Modifications:
+    - target: {fileID: 544007186174457610, guid: de70170c86516964fb05f1b0de531325, type: 3}
+      propertyPath: withPlayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4800456682484645166, guid: de70170c86516964fb05f1b0de531325, type: 3}
       propertyPath: m_Name
       value: Firefly (5)
@@ -1180,6 +1192,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2101180583}
     m_Modifications:
+    - target: {fileID: 544007186174457610, guid: de70170c86516964fb05f1b0de531325, type: 3}
+      propertyPath: withPlayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4800456682484645166, guid: de70170c86516964fb05f1b0de531325, type: 3}
       propertyPath: m_Name
       value: Firefly (2)
@@ -1326,6 +1342,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2101180583}
     m_Modifications:
+    - target: {fileID: 544007186174457610, guid: de70170c86516964fb05f1b0de531325, type: 3}
+      propertyPath: withPlayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4800456682484645166, guid: de70170c86516964fb05f1b0de531325, type: 3}
       propertyPath: m_Name
       value: Firefly (4)
@@ -1664,6 +1684,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2101180583}
     m_Modifications:
+    - target: {fileID: 544007186174457610, guid: de70170c86516964fb05f1b0de531325, type: 3}
+      propertyPath: withPlayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4800456682484645166, guid: de70170c86516964fb05f1b0de531325, type: 3}
       propertyPath: m_Name
       value: Firefly
