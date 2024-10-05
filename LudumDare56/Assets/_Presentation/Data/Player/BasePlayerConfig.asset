@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: BasePlayerConfig
   m_EditorClassIdentifier: 
   <FirefliesSpeed>k__BackingField: 2
+  <KnightSpeed>k__BackingField: 2

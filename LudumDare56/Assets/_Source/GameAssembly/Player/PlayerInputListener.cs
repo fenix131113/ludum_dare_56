@@ -1,43 +1,65 @@
+using Core.Data;
+using Core.Game;
 using Fireflies;
-using UnityEditor.Experimental.GraphView;
+using Knight;
 using UnityEngine;
 using Zenject;
 
 namespace Player
 {
-    public class PlayerInputListener : ITickable
-    {
-        private readonly FirefliesMovement _firefliesMovement;
-        private readonly FirefliesContainer _firefliesContainer;
-        
-        [Inject]
-        private PlayerInputListener(FirefliesMovement firefliesMovement, FirefliesContainer firefliesContainer)
-        {
-            _firefliesMovement = firefliesMovement;
-            _firefliesContainer = firefliesContainer;
-        }
-        
-        public void Tick()
-        {
-            ReadMovementInput();
-            ReadInvisibleAbilityInput();
-        }
+	public class PlayerInputListener : ITickable
+	{
+		private readonly FirefliesMovement _firefliesMovement;
+		private readonly FirefliesContainer _firefliesContainer;
+		private readonly GameStates _gameStates;
+		private readonly KnightMovement _knightMovement;
 
-        private void ReadInvisibleAbilityInput()
-        {
-            if (!Input.GetKeyDown(KeyCode.Space)) return;
-            
-            if(_firefliesContainer.InvisibleModule.IsInvisible)
-                _firefliesContainer.MakeVisible();
-            else
-                _firefliesContainer.MakeInvisible();
-        }
+		[Inject]
+		private PlayerInputListener(FirefliesMovement firefliesMovement, FirefliesContainer firefliesContainer,
+			GameStates gameStates, KnightMovement knightMovement)
+		{
+			_firefliesMovement = firefliesMovement;
+			_firefliesContainer = firefliesContainer;
+			_gameStates = gameStates;
+			_knightMovement = knightMovement;
+		}
 
-        private void ReadMovementInput()
-        {
-            var inputVector = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-            
-            _firefliesMovement.Move(inputVector.normalized);
-        }
-    }
+		public void Tick()
+		{
+			if (_gameStates.PlayerType == PlayerType.FIREFLIES)
+			{
+				ReadFirefliesMovementInput();
+				ReadFirefliesInvisibleAbilityInput();
+			}
+			else
+			{
+				ReadKnightMovementInput();
+			}
+		}
+
+		private void ReadKnightMovementInput()
+		{
+			var moveVector = new Vector2(Input.GetAxisRaw("Horizontal"), 0);
+			
+			_knightMovement.Move(moveVector);
+		}
+
+
+		private void ReadFirefliesInvisibleAbilityInput()
+		{
+			if (!Input.GetKeyDown(KeyCode.Space)) return;
+
+			if (_firefliesContainer.InvisibleModule.IsInvisible)
+				_firefliesContainer.MakeVisible();
+			else
+				_firefliesContainer.MakeInvisible();
+		}
+
+		private void ReadFirefliesMovementInput()
+		{
+			var inputVector = new Vector2(Input.GetAxisRaw("Horizontal"), 0);
+
+			_firefliesMovement.Move(inputVector.normalized);
+		}
+	}
 }

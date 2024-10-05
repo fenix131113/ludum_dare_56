@@ -6,5 +6,6 @@ namespace Player.Data
 	public class PlayerConfig : ScriptableObject
 	{
 		[field: SerializeField] public float FirefliesSpeed { get; private set; }
+		[field: SerializeField] public float KnightSpeed { get; private set; }
 	}
 }

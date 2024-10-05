@@ -25,7 +25,7 @@ namespace Fireflies
 		public void Move(Vector2 moveVector)
 		{
 			if (!_firefliesContainer.InvisibleModule.IsInvisible)
-				_rb.AddForce(new Vector2(moveVector.x, moveVector.y) * (Time.deltaTime * _config.FirefliesSpeed * 1000),
+				_rb.AddForce(new Vector2(moveVector.x, moveVector.y) * (_config.FirefliesSpeed),
 					ForceMode2D.Force);
 			else
 				_rb.velocity = Vector2.zero;

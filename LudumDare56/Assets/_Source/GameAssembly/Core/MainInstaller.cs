@@ -1,4 +1,6 @@
+using Core.Game;
 using Fireflies;
+using Knight;
 using Player;
 using Player.Data;
 using UnityEngine;
@@ -14,6 +16,23 @@ namespace Core
         {
             BindPlayer();
             BindFireflies();
+            BindCore();
+            BindKnight();
+        }
+
+        private void BindKnight()
+        {
+            Container.Bind<KnightMovement>()
+                .FromComponentInHierarchy()
+                .AsSingle()
+                .NonLazy();
+        }
+
+        private void BindCore()
+        {
+            Container.Bind<GameStates>()
+                .AsSingle()
+                .NonLazy();
         }
 
         private void BindFireflies()
