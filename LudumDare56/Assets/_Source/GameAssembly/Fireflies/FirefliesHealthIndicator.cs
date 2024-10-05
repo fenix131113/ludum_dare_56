@@ -11,18 +11,20 @@ namespace Fireflies
 		private readonly VolumeProfile _volumeProfile;
 		private readonly FirefliesHealth _health;
 		private readonly GameStates _gameStates;
+		private readonly FirefliesContainer _firefliesContainer;
 
 		[Inject]
-		public FirefliesHealthIndicator(VolumeProfile volumeProfile, FirefliesHealth health, GameStates gameStates)
+		public FirefliesHealthIndicator(VolumeProfile volumeProfile, FirefliesHealth health, GameStates gameStates, FirefliesContainer firefliesContainer)
 		{
 			_volumeProfile = volumeProfile;
 			_health = health;
 			_gameStates = gameStates;
+			_firefliesContainer = firefliesContainer;
 		}
 
 		public void Tick()
 		{
-			if(_gameStates.PlayerType != PlayerType.FIREFLIES)
+			if(_gameStates.PlayerType != PlayerType.FIREFLIES || _firefliesContainer.InvisibleModule.IsInvisible)
 				return;
 			
 			const float divider = 6f;

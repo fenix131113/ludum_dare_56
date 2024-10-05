@@ -9,12 +9,15 @@ namespace Fireflies
 
 		private readonly FirefliesHealth _health;
 		private readonly FirefliesConfig _config;
+		private readonly FirefliesContainer _firefliesContainer;
 
 		[Inject]
-		public HealthLightChecker(FirefliesHealth firefliesHealth, FirefliesConfig config)
+		public HealthLightChecker(FirefliesHealth firefliesHealth, FirefliesConfig config,
+			FirefliesContainer firefliesContainer)
 		{
 			_config = config;
 			_health = firefliesHealth;
+			_firefliesContainer = firefliesContainer;
 		}
 
 		public void StayInLightActivate() => StayInLight = true;
@@ -23,6 +26,9 @@ namespace Fireflies
 
 		public void Tick()
 		{
+			if (_firefliesContainer.InvisibleModule.IsInvisible)
+				return;
+
 			if (!StayInLight)
 				_health.DecreaseHealth(_config.MinusHealthPerTick);
 			else
