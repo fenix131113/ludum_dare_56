@@ -1,5 +1,6 @@
-using PlayerMovement;
-using PlayerMovement.Data;
+using Fireflies;
+using Player;
+using Player.Data;
 using UnityEngine;
 using Zenject;
 
@@ -12,8 +13,17 @@ namespace Core
         public override void InstallBindings()
         {
             BindPlayer();
+            BindFireflies();
         }
 
+        private void BindFireflies()
+        {
+            Container.Bind<FirefliesContainer>()
+                .FromComponentInHierarchy()
+                .AsSingle()
+                .NonLazy();
+        }
+        
         private void BindPlayer()
         {
             Container.BindInterfacesAndSelfTo<PlayerInputListener>()

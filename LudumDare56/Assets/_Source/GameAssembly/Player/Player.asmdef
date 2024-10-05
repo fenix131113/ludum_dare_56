@@ -1,11 +1,8 @@
 {
-    "name": "Fireflies",
+    "name": "Player",
     "rootNamespace": "",
     "references": [
-        "GUID:cbe18ac50f9750547af572fdcf026ff0",
-        "GUID:4e8d751a4128471385dca87fb6cdd835",
-        "GUID:15fc0a57446b3144c949da3e2b9737a9",
-        "GUID:04d3dc84be8448889b7ce84e74167d56"
+        "GUID:63c7aa68c81065847bd35da384cdef6c"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

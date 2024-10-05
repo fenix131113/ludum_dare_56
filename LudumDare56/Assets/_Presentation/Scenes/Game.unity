@@ -1896,7 +1896,7 @@ MonoBehaviour:
   config: {fileID: 11400000, guid: 67a447491680af040bae8c28cd25c228, type: 2}
   vision: {fileID: 242289373}
   rotatePivot: {fileID: 987361724}
-  lookTimeBeforeAttack: 1.5
+  lookTimeBeforeAttack: 0.75
 --- !u!114 &1626479027 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 544007186174457610, guid: de70170c86516964fb05f1b0de531325, type: 3}
@@ -2211,6 +2211,7 @@ MonoBehaviour:
   - {fileID: 980219710}
   - {fileID: 2057906627}
   - {fileID: 1506200211}
+  playerCollider: {fileID: 2101180586}
   fireflyPrefab: {fileID: 544007186174457610, guid: de70170c86516964fb05f1b0de531325, type: 3}
 --- !u!1 &2138292015
 GameObject:

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace PlayerMovement.Data
+namespace Player.Data
 {
 	[CreateAssetMenu(fileName = "New PlayerConfig", menuName = "ScriptableObjects/New PlayerConfig")]
 	public class PlayerConfig : ScriptableObject
