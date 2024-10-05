@@ -13,15 +13,24 @@ namespace Fireflies
 		private Vector3 _currentDirection;
 		private CircleCollider2D _firefliesGroupCollider;
 
+		public void Init(CircleCollider2D firefliesGroupCollider)
+		{
+			if (_firefliesGroupCollider)
+				return;
+
+			_firefliesGroupCollider = firefliesGroupCollider;
+
+			if (!withPlayer)
+				MoveToPlayer();
+		}
+
 		private void Awake()
 		{
 			if (!withPlayer)
-				MoveToPlayer();
-			else
-			{
-				GenerateMovement();
-				StartCoroutine(ChangeDirectionTimer());
-			}
+				return;
+
+			GenerateMovement();
+			StartCoroutine(ChangeDirectionTimer());
 		}
 
 		private void MoveToPlayer()
