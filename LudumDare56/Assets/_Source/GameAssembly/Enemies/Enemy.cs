@@ -1,10 +1,13 @@
 using Enemies.Data;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 namespace Enemies
 {
 	public class Enemy : MonoBehaviour
 	{
+		[SerializeField] private Gradient spottedGradient = new();
+		[SerializeField] private Light2D light;
 		[SerializeField] private EnemyConfig config;
 		[SerializeField] private EnemyVision vision;
 		[SerializeField] private Transform rotatePivot;
@@ -28,6 +31,8 @@ namespace Enemies
 		{
 			if (_lookAtPlayer)
 				LookAtPlayer();
+			else if(!_isRunning)
+				light.color = spottedGradient.Evaluate(0);
 		}
 
 		private void FixedUpdate()
@@ -83,6 +88,8 @@ namespace Enemies
 		private void LookAtPlayer()
 		{
 			SetRotation(_player.transform.position.x > transform.position.x);
+			
+			light.color = spottedGradient.Evaluate((Time.time - _lookTimer) / lookTimeBeforeAttack);
 
 			if (Time.time - _lookTimer >= lookTimeBeforeAttack && _lookAtPlayer && !_isRunning)
 				RunToPlayer();

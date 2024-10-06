@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7744457358082207572}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Lever
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1462629108888403930}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.9057, y: -10.177, z: 0.08519437}
   m_LocalScale: {x: 1.0659772, y: 0.2089763, z: 1}
   m_ConstrainProportionsScale: 0
@@ -43,7 +43,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8742029080852596839}
   - component: {fileID: 5353768939288100331}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Lever
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 2275824248418199642}
   - component: {fileID: 1252921744141644888}
   - component: {fileID: 2452393673173153129}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LeverBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -234,7 +234,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 3}
@@ -286,7 +286,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8664314841928993720}
   - component: {fileID: 7800200189924097344}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: InteractiveKey
   m_TagString: Untagged
   m_Icon: {fileID: 0}
