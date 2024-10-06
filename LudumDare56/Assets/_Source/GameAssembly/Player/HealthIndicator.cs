@@ -41,7 +41,6 @@ namespace Player
 
 		private void SetVignette(float value)
 		{
-			Debug.Log(value);
 			var vignette = (Vignette)_volumeProfile.components[0];
 			var parameter = vignette.intensity;
 			

@@ -15,5 +15,5 @@ MonoBehaviour:
   <MaxHealth>k__BackingField: 1
   <MinusHealthPerTick>k__BackingField: 0.0001
   <PlusHealthPerTick>k__BackingField: 0.001
-  <FirefliesSpeed>k__BackingField: 2
+  <FirefliesSpeed>k__BackingField: 3
   <KnightSpeed>k__BackingField: 2

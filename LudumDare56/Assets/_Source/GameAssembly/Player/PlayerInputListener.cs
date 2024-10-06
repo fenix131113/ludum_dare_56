@@ -15,7 +15,7 @@ namespace Player
 		private readonly GameStates _gameStates;
 		private readonly KnightMovement _knightMovement;
 
-		public event Action OnInteractiveKeyPressed;
+		public event Action OnInteractiveKeyDown;
 		public event Action OnInteractiveKeyUnPressed;
 
 		[Inject]
@@ -46,7 +46,7 @@ namespace Player
 		private void ReadInteractiveKey()
 		{
 			if (Input.GetKeyDown(KeyCode.E))
-				OnInteractiveKeyPressed?.Invoke();
+				OnInteractiveKeyDown?.Invoke();
 			if(Input.GetKeyUp(KeyCode.E))
 				OnInteractiveKeyUnPressed?.Invoke();
 		}

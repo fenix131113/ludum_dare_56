@@ -1,3 +1,4 @@
+using System;
 using Player;
 using UnityEngine;
 using Utils;
@@ -5,7 +6,7 @@ using Zenject;
 
 namespace Interactive.ValveSystem
 {
-	public class Valve : MonoBehaviour
+	public class Valve : MonoBehaviour, IInteractableProgress
 	{
 		[SerializeField] private LayerMask interactiveLayer;
 		[SerializeField] private float progressSpeed;
@@ -15,6 +16,8 @@ namespace Interactive.ValveSystem
 
 		private bool _isRotating;
 		private PlayerInputListener _inputListener;
+		
+		public event Action OnProgressChanged;
 
 		[Inject]
 		private void Construct(PlayerInputListener inputListener)
@@ -56,13 +59,13 @@ namespace Interactive.ValveSystem
 
 		private void Bind()
 		{
-			_inputListener.OnInteractiveKeyPressed += ActivateRotation;
+			_inputListener.OnInteractiveKeyDown += ActivateRotation;
 			_inputListener.OnInteractiveKeyUnPressed += DeactivateRotation;
 		}
 
 		private void Expose()
 		{
-			_inputListener.OnInteractiveKeyPressed -= ActivateRotation;
+			_inputListener.OnInteractiveKeyDown -= ActivateRotation;
 			_inputListener.OnInteractiveKeyUnPressed -= DeactivateRotation;
 		}
 
@@ -73,12 +76,18 @@ namespace Interactive.ValveSystem
 				case true when Progress < 1:
 					transform.eulerAngles -= Vector3.forward * (rotateSpeed * Time.deltaTime);
 					Progress = Mathf.Clamp(Progress + Time.deltaTime * progressSpeed, 0, 1);
+					OnProgressChanged?.Invoke();
 					break;
 				case false when Progress > 0:
 					transform.eulerAngles += Vector3.forward * (rotateSpeed * Time.deltaTime);
 					Progress = Mathf.Clamp(Progress - Time.deltaTime * progressSpeed, 0, 1);
+					OnProgressChanged?.Invoke();
 					break;
 			}
 		}
+
+		private void OnApplicationQuit() => Expose();
+
+		private void OnDestroy() => Expose();
 	}
 }

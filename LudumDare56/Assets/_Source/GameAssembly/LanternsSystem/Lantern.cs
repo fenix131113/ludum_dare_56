@@ -32,12 +32,12 @@ namespace LanternsSystem
 
 		private void Bind()
 		{
-			_inputListener.OnInteractiveKeyPressed += TurnLanternOn;
+			_inputListener.OnInteractiveKeyDown += TurnLanternOn;
 		}
 
 		private void Expose()
 		{
-			_inputListener.OnInteractiveKeyPressed -= TurnLanternOn;
+			_inputListener.OnInteractiveKeyDown -= TurnLanternOn;
 		}
 
 		private void OnTriggerEnter2D(Collider2D other)
