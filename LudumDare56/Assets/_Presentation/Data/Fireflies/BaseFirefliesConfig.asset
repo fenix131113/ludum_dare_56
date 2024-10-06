@@ -12,11 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a08ae42d03a94ad79048daad636e786d, type: 3}
   m_Name: BaseFirefliesConfig
   m_EditorClassIdentifier: 
-  <MaxHealth>k__BackingField: 1
-  <MinusHealthPerTick>k__BackingField: 0.0005
-  <PlusHealthPerTick>k__BackingField: 0.001
   <EaseType>k__BackingField: 4
   <MinMoveTime>k__BackingField: 0.4
   <MaxMoveTime>k__BackingField: 0.8
   <MinChangeDirectionTime>k__BackingField: 0.4
   <MaxChangeDirectionTime>k__BackingField: 0.8
+  <InvisibleCooldown>k__BackingField: 5

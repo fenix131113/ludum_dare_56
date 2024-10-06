@@ -6,14 +6,22 @@
   <component name="ChangeListManager">
     <list default="true" id="9b950bd6-5948-42cf-8b22-a7bfc86aa0cc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LudumDare56/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LudumDare56/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/Lantern.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/Lantern.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Data/Enemies/Knight.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Data/Enemies/Knight.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Data/Fireflies/BaseFirefliesConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Data/Fireflies/BaseFirefliesConfig.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Data/Player/BasePlayerConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Data/Player/BasePlayerConfig.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/Box.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/Box.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/Lantern.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/Lantern.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/Lever.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/Lever.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/Valve.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/Valve.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Enemies/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Enemies/Enemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Fireflies/FirefliesMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Fireflies/FirefliesMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Fireflies/Data/FirefliesConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Fireflies/Data/FirefliesConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Fireflies/FirefliesContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Fireflies/FirefliesContainer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Interactive/InteractiveKeyIndicator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Interactive/InteractiveKeyIndicator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Interactive/LanternsSystem/Lantern.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Interactive/LanternsSystem/Lantern.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Interactive/LeverSystem/Lever.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Interactive/LeverSystem/Lever.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Interactive/ValveSystem/Valve.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Interactive/ValveSystem/Valve.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Player/PlayerInputListener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Player/PlayerInputListener.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +60,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature/movement",
+    "git-widget-placeholder": "feature/fireflies__behaviour",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "F:/Programs/Unity/Projects/ludum_dare_56/LudumDare56/Assets/_Source/GameAssembly",
     "node.js.detected.package.eslint": "true",

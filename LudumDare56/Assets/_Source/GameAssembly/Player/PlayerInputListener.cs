@@ -8,7 +8,7 @@ using Zenject;
 
 namespace Player
 {
-	public class PlayerInputListener : ITickable
+	public class PlayerInputListener : IFixedTickable, ITickable
 	{
 		private readonly FirefliesMovement _firefliesMovement;
 		private readonly FirefliesContainer _firefliesContainer;
@@ -31,7 +31,13 @@ namespace Player
 		public void Tick()
 		{
 			ReadInteractiveKey();
+			
+			if (_gameStates.PlayerType == PlayerType.FIREFLIES)
+				ReadFirefliesInvisibleAbilityInput();
+		}
 
+		public void FixedTick()
+		{
 			if (_gameStates.PlayerType == PlayerType.FIREFLIES)
 			{
 				ReadFirefliesMovementInput();
@@ -47,7 +53,7 @@ namespace Player
 		{
 			if (Input.GetKeyDown(KeyCode.E))
 				OnInteractiveKeyDown?.Invoke();
-			if(Input.GetKeyUp(KeyCode.E))
+			if (Input.GetKeyUp(KeyCode.E))
 				OnInteractiveKeyUnPressed?.Invoke();
 		}
 

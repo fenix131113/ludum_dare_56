@@ -62,12 +62,13 @@ namespace Interactive
 
 		private void OnTriggerExit2D(Collider2D other)
 		{
-			if (useCollider && LayerService.CheckLayersEquality(other.gameObject.layer, interactLayer)) return;
-			
-			Expose();
+			if (!LayerService.CheckLayersEquality(other.gameObject.layer, interactLayer))
+				return;
 			
 			if(_isActive)
 				HideIndicator();
+			
+			Expose();
 		}
 
 		private void ShowIndicator()

@@ -1,5 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
+using Fireflies.Data;
 using UnityEngine;
+using Zenject;
 
 namespace Fireflies
 {
@@ -13,6 +16,11 @@ namespace Fireflies
 		public FirefliesInvisible InvisibleModule { get; private set; }
 
 		private CircleCollider2D _circleCollider;
+		private FirefliesConfig _config;
+		private bool _canUseInvisibleModule = true;
+
+		[Inject]
+		private void Construct(FirefliesConfig config) => _config = config;
 		
 		private void Awake()
 		{
@@ -32,6 +40,9 @@ namespace Fireflies
 
 		public void MakeInvisible()
 		{
+			if(!_canUseInvisibleModule)
+				return;
+			
 			InvisibleModule.Hide(fireflies);
 			playerCollider.enabled = false;
 		}
@@ -40,6 +51,16 @@ namespace Fireflies
 		{
 			InvisibleModule.Show(fireflies);
 			playerCollider.enabled = true;
+			StartCoroutine(InvisibleCooldownCoroutine());
+		}
+
+		private IEnumerator InvisibleCooldownCoroutine()
+		{
+			_canUseInvisibleModule = false;
+			
+			yield return new WaitForSeconds(_config.InvisibleCooldown);
+			
+			_canUseInvisibleModule = true;
 		}
 	}
 }

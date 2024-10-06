@@ -11,5 +11,6 @@ namespace Fireflies.Data
 		[field: SerializeField] public float MaxMoveTime { get; private set; }
 		[field: SerializeField] public float MinChangeDirectionTime { get; private set; }
 		[field: SerializeField] public float MaxChangeDirectionTime { get; private set; }
+		[field: SerializeField] public float InvisibleCooldown { get; private set; }
 	}
 }
