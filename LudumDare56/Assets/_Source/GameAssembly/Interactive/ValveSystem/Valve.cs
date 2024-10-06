@@ -40,6 +40,7 @@ namespace Interactive.ValveSystem
 			if (!LayerService.CheckLayersEquality(other.gameObject.layer, interactiveLayer))
 				return;
 
+			DeactivateRotation();
 			Expose();
 		}
 

@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using DG.Tweening;
 using Fireflies.Data;
 using UnityEngine;
@@ -19,7 +18,6 @@ namespace Fireflies
 		private CircleCollider2D _firefliesGroupCollider;
 		private Tween _moveTween;
 		private float _startIntensity;
-		private FirefliesHealth _health;
 
 		public void Init(CircleCollider2D firefliesGroupCollider)
 		{

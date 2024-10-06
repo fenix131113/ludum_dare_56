@@ -12,5 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2def134520ee42f2a02034f4299bdcc7, type: 3}
   m_Name: BasePlayerConfig
   m_EditorClassIdentifier: 
+  <MaxHealth>k__BackingField: 1
+  <MinusHealthPerTick>k__BackingField: 0.0001
+  <PlusHealthPerTick>k__BackingField: 0.001
   <FirefliesSpeed>k__BackingField: 2
   <KnightSpeed>k__BackingField: 2

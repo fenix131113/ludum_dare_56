@@ -1,19 +1,19 @@
-﻿using Fireflies.Data;
+﻿using Player.Data;
 using UnityEngine;
 using Zenject;
 
-namespace Fireflies
+namespace Player
 {
-	public class FirefliesHealth
+	public class PlayerHealth
 	{
 		public float Health { get; private set; }
 		
-		private readonly FirefliesConfig _config;
+		private readonly PlayerConfig _config;
 
 		[Inject]
-		public FirefliesHealth(FirefliesConfig firefliesConfig)
+		public PlayerHealth(PlayerConfig playerConfig)
 		{
-			_config = firefliesConfig;
+			_config = playerConfig;
 
 			Health = _config.MaxHealth;
 		}

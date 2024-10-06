@@ -1,20 +1,22 @@
 ﻿using Core.Data;
 using Core.Game;
+using Fireflies;
+using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 using Zenject;
 
-namespace Fireflies
+namespace Player
 {
-	public class FirefliesHealthIndicator : ITickable, IInitializable
+	public class HealthIndicator : ITickable, IInitializable
 	{
 		private readonly VolumeProfile _volumeProfile;
-		private readonly FirefliesHealth _health;
+		private readonly PlayerHealth _health;
 		private readonly GameStates _gameStates;
 		private readonly FirefliesContainer _firefliesContainer;
 
 		[Inject]
-		public FirefliesHealthIndicator(VolumeProfile volumeProfile, FirefliesHealth health, GameStates gameStates, FirefliesContainer firefliesContainer)
+		public HealthIndicator(VolumeProfile volumeProfile, PlayerHealth health, GameStates gameStates, FirefliesContainer firefliesContainer)
 		{
 			_volumeProfile = volumeProfile;
 			_health = health;
@@ -24,7 +26,7 @@ namespace Fireflies
 
 		public void Tick()
 		{
-			if(_gameStates.PlayerType != PlayerType.FIREFLIES || _firefliesContainer.InvisibleModule.IsInvisible)
+			if(_gameStates.PlayerType == PlayerType.FIREFLIES && _firefliesContainer.InvisibleModule.IsInvisible)
 				return;
 			
 			const float divider = 3f;
@@ -39,6 +41,7 @@ namespace Fireflies
 
 		private void SetVignette(float value)
 		{
+			Debug.Log(value);
 			var vignette = (Vignette)_volumeProfile.components[0];
 			var parameter = vignette.intensity;
 			

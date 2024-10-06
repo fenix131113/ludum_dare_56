@@ -6,9 +6,6 @@ namespace Fireflies.Data
 	[CreateAssetMenu(fileName = "New FirefliesConfig", menuName = "ScriptableObjects/New FirefliesConfig")]
 	public class FirefliesConfig : ScriptableObject
 	{
-		[field: SerializeField] public float MaxHealth { get; private set; }
-		[field: SerializeField] public float MinusHealthPerTick { get; private set; }
-		[field: SerializeField] public float PlusHealthPerTick { get; private set; }
 		[field: SerializeField] public Ease EaseType { get; private set; }
 		[field: SerializeField] public float MinMoveTime { get; private set; }
 		[field: SerializeField] public float MaxMoveTime { get; private set; }

@@ -1,23 +1,28 @@
-﻿using Fireflies.Data;
+﻿using Core.Data;
+using Core.Game;
+using Fireflies;
+using Player.Data;
 using Zenject;
 
-namespace Fireflies
+namespace Player
 {
 	public class HealthLightChecker : ITickable
 	{
 		public bool StayInLight { get; private set; }
 
-		private readonly FirefliesHealth _health;
-		private readonly FirefliesConfig _config;
+		private readonly PlayerHealth _health;
+		private readonly PlayerConfig _config;
 		private readonly FirefliesContainer _firefliesContainer;
+		private readonly GameStates _gameStates;
 
 		[Inject]
-		public HealthLightChecker(FirefliesHealth firefliesHealth, FirefliesConfig config,
-			FirefliesContainer firefliesContainer)
+		public HealthLightChecker(PlayerHealth playerHealth, PlayerConfig config,
+			FirefliesContainer firefliesContainer, GameStates gameStates)
 		{
 			_config = config;
-			_health = firefliesHealth;
+			_health = playerHealth;
 			_firefliesContainer = firefliesContainer;
+			_gameStates = gameStates;
 		}
 
 		public void StayInLightActivate() => StayInLight = true;
@@ -26,7 +31,7 @@ namespace Fireflies
 
 		public void Tick()
 		{
-			if (_firefliesContainer.InvisibleModule.IsInvisible)
+			if (_gameStates.PlayerType == PlayerType.FIREFLIES && _firefliesContainer.InvisibleModule.IsInvisible)
 				return;
 
 			if (!StayInLight)

@@ -52,7 +52,7 @@ namespace Core
                 .AsSingle()
                 .NonLazy();
 
-            Container.Bind<FirefliesHealth>()
+            Container.Bind<PlayerHealth>()
                 .AsSingle()
                 .NonLazy();
 
@@ -65,7 +65,7 @@ namespace Core
                 .AsSingle()
                 .NonLazy();
 
-            Container.BindInterfacesTo<FirefliesHealthIndicator>()
+            Container.BindInterfacesTo<HealthIndicator>()
                 .AsSingle()
                 .NonLazy();
         }
