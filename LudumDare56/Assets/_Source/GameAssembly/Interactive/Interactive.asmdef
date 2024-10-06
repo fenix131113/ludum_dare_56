@@ -1,3 +1,4 @@
 {
-	"name": "Interactive"
+	"name": "Interactive",
+	"references":[ "GUID:9b5a6996a5824dbc8b04cfab6453818e" ]
 }

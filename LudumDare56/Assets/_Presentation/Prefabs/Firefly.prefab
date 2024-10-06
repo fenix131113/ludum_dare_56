@@ -74,8 +74,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 7482667652216324306, guid: db750325989564987a34393247d883b4, type: 3}
   m_Color: {r: 1, g: 0.7944628, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -101,7 +101,7 @@ MonoBehaviour:
   config: {fileID: 11400000, guid: d581820c53da2b146b1345fb7ee262cf, type: 2}
   fireflyLight: {fileID: 7128758653063610119}
   spriteRenderer: {fileID: 6337479696164674345}
-  withPlayer: 0
+  withPlayer: 1
 --- !u!1 &5954855496856806336
 GameObject:
   m_ObjectHideFlags: 0

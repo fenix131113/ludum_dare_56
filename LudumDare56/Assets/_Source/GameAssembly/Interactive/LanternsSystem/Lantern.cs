@@ -1,14 +1,17 @@
-﻿using Fireflies;
+﻿using System;
 using Player;
 using UnityEngine;
 using Utils;
 using Zenject;
 
-namespace LanternsSystem
+namespace Interactive.LanternsSystem
 {
-	public class Lantern : MonoBehaviour
+	public class Lantern : MonoBehaviour, IInteractableProgress
 	{
 		[SerializeField] private LayerMask playerMask;
+		
+		public float Progress => _isLanternActive ? 1f : 0f;
+		public event Action OnProgressChanged;
 
 		private bool _isLanternActive;
 		private PlayerInputListener _inputListener;
@@ -28,6 +31,7 @@ namespace LanternsSystem
 
 			_isLanternActive = true;
 			_healthChecker.StayInLightActivate();
+			OnProgressChanged?.Invoke();
 		}
 
 		private void Bind()

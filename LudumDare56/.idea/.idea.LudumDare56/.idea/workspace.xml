@@ -6,11 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="9b950bd6-5948-42cf-8b22-a7bfc86aa0cc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LudumDare56/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LudumDare56/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Data/Player/BasePlayerConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Data/Player/BasePlayerConfig.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/Firefly.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/Firefly.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/Valve.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/Valve.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Interactive/ValveSystem/Valve.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Interactive/ValveSystem/Valve.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Interactive/ValveSystem/ValveSystem.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Interactive/ValveSystem/ValveSystem.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Interactive/Interactive.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Interactive/Interactive.asmdef" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/LanternsSystem/Lantern.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/LanternsSystem/Lantern.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Player/PlayerInputListener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Player/PlayerInputListener.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/LanternsSystem/LanternsSystem.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/LanternsSystem/LanternsSystem.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Player/HealthIndicator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Player/HealthIndicator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +25,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0b78209fd00d4f419f30dd210cbab239176600/e2/61587eb3/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0b78209fd00d4f419f30dd210cbab239176600/ed/3dfd09cc/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f5b293c74049457cabc28437c5a763925a00/b3/f3f6bea0/ITickable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Source/GameAssembly/Enemies/Data/EnemyConfig.cs" root0="FORCE_HIGHLIGHTING" />
@@ -110,7 +115,7 @@
       <workItem from="1728127535007" duration="59000" />
       <workItem from="1728127605622" duration="5662000" />
       <workItem from="1728203698246" duration="127000" />
-      <workItem from="1728203834944" duration="5058000" />
+      <workItem from="1728203834944" duration="13761000" />
     </task>
     <servers />
   </component>

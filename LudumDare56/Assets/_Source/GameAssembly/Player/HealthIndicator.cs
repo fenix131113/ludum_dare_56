@@ -1,7 +1,6 @@
 ﻿using Core.Data;
 using Core.Game;
 using Fireflies;
-using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 using Zenject;
@@ -29,7 +28,7 @@ namespace Player
 			if(_gameStates.PlayerType == PlayerType.FIREFLIES && _firefliesContainer.InvisibleModule.IsInvisible)
 				return;
 			
-			const float divider = 3f;
+			const float divider = 2f;
 			
 			SetVignette(1f / divider - _health.Health / divider);
 		}
