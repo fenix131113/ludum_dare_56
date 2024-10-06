@@ -27,7 +27,7 @@ namespace Fireflies
 			if(_gameStates.PlayerType != PlayerType.FIREFLIES || _firefliesContainer.InvisibleModule.IsInvisible)
 				return;
 			
-			const float divider = 6f;
+			const float divider = 3f;
 			
 			SetVignette(1f / divider - _health.Health / divider);
 		}

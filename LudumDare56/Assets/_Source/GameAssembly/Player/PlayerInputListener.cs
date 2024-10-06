@@ -16,6 +16,7 @@ namespace Player
 		private readonly KnightMovement _knightMovement;
 
 		public event Action OnInteractiveKeyPressed;
+		public event Action OnInteractiveKeyUnPressed;
 
 		[Inject]
 		private PlayerInputListener(FirefliesMovement firefliesMovement, FirefliesContainer firefliesContainer,
@@ -46,6 +47,8 @@ namespace Player
 		{
 			if (Input.GetKeyDown(KeyCode.E))
 				OnInteractiveKeyPressed?.Invoke();
+			if(Input.GetKeyUp(KeyCode.E))
+				OnInteractiveKeyUnPressed?.Invoke();
 		}
 
 		private void ReadKnightMovementInput()
