@@ -266,7 +266,7 @@ MonoBehaviour:
   interactLayer:
     serializedVersion: 2
     m_Bits: 8
-  indicatorYOffset: 0.68
+  indicatorYOffset: 0.6
   animationDuration: 0.6
   keyIndicatorRenderer: {fileID: 1320109421190739906}
   interactiveObject: {fileID: 7534833688479068015}

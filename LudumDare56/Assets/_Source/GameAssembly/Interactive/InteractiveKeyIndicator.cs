@@ -49,30 +49,25 @@ namespace Interactive
 
 		private void OnTriggerEnter2D(Collider2D other)
 		{
-			if (!useCollider || !LayerService.CheckLayersEquality(other.gameObject.layer, interactLayer))
+			if (LayerService.CheckLayersEquality(other.gameObject.layer, interactLayer) && !useCollider)
 			{
 				if (Mathf.Approximately(_interactable.Progress, 1)) return;
 				
 				ShowIndicator();
 				Bind();
-
-				return;
 			}
-
-			ShowIndicator();
+			else if(LayerService.CheckLayersEquality(other.gameObject.layer, interactLayer))
+				ShowIndicator();
 		}
 
 		private void OnTriggerExit2D(Collider2D other)
 		{
-			if (!useCollider || !LayerService.CheckLayersEquality(other.gameObject.layer, interactLayer))
-			{
-				Expose();
-				if(_isActive)
-					HideIndicator();
-				return;
-			}
-
-			HideIndicator();
+			if (useCollider && LayerService.CheckLayersEquality(other.gameObject.layer, interactLayer)) return;
+			
+			Expose();
+			
+			if(_isActive)
+				HideIndicator();
 		}
 
 		private void ShowIndicator()
@@ -120,7 +115,5 @@ namespace Interactive
 		}
 
 		private void OnApplicationQuit() => Expose();
-
-		private void OnDestroy() => Expose();
 	}
 }

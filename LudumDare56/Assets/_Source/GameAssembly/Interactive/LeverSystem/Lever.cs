@@ -74,7 +74,5 @@ namespace Interactive.LeverSystem
 		}
 		
 		private void OnApplicationQuit() => Expose();
-
-		private void OnDestroy() => Expose();
 	}
 }

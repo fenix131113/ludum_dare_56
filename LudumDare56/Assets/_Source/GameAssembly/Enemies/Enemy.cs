@@ -7,7 +7,7 @@ namespace Enemies
 	public class Enemy : MonoBehaviour
 	{
 		[SerializeField] private Gradient spottedGradient = new();
-		[SerializeField] private Light2D light;
+		[SerializeField] private Light2D visionLight;
 		[SerializeField] private EnemyConfig config;
 		[SerializeField] private EnemyVision vision;
 		[SerializeField] private Transform rotatePivot;
@@ -32,7 +32,7 @@ namespace Enemies
 			if (_lookAtPlayer)
 				LookAtPlayer();
 			else if(!_isRunning)
-				light.color = spottedGradient.Evaluate(0);
+				visionLight.color = spottedGradient.Evaluate(0);
 		}
 
 		private void FixedUpdate()
@@ -89,7 +89,7 @@ namespace Enemies
 		{
 			SetRotation(_player.transform.position.x > transform.position.x);
 			
-			light.color = spottedGradient.Evaluate((Time.time - _lookTimer) / lookTimeBeforeAttack);
+			visionLight.color = spottedGradient.Evaluate((Time.time - _lookTimer) / lookTimeBeforeAttack);
 
 			if (Time.time - _lookTimer >= lookTimeBeforeAttack && _lookAtPlayer && !_isRunning)
 				RunToPlayer();
@@ -112,8 +112,6 @@ namespace Enemies
 			vision.OnPlayerDetected -= ActivatePlayerLook;
 			vision.OnPlayerGone -= DeactivatePlayerLook;
 		}
-
-		private void OnDestroy() => Expose();
 
 		private void OnApplicationQuit() => Expose();
 	}

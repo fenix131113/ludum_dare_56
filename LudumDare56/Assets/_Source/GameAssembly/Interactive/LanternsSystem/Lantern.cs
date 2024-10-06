@@ -9,7 +9,8 @@ namespace Interactive.LanternsSystem
 	public class Lantern : MonoBehaviour, IInteractableProgress
 	{
 		[SerializeField] private LayerMask playerMask;
-		
+		[SerializeField] private bool activeOnStart;
+
 		public float Progress => _isLanternActive ? 1f : 0f;
 		public event Action OnProgressChanged;
 
@@ -22,6 +23,9 @@ namespace Interactive.LanternsSystem
 		{
 			_inputListener = inputListener;
 			_healthChecker = healthLightChecker;
+
+			if (activeOnStart)
+				_isLanternActive = true;
 		}
 
 		public void TurnLanternOn()
@@ -50,7 +54,7 @@ namespace Interactive.LanternsSystem
 				return;
 
 			Bind();
-			
+
 			if (_isLanternActive)
 				_healthChecker.StayInLightActivate();
 		}
@@ -61,7 +65,7 @@ namespace Interactive.LanternsSystem
 				return;
 
 			Expose();
-			
+
 			if (_isLanternActive)
 				_healthChecker.StayInLightDeactivate();
 		}

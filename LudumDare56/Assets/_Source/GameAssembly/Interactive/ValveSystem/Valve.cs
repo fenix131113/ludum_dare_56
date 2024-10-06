@@ -87,7 +87,5 @@ namespace Interactive.ValveSystem
 		}
 
 		private void OnApplicationQuit() => Expose();
-
-		private void OnDestroy() => Expose();
 	}
 }

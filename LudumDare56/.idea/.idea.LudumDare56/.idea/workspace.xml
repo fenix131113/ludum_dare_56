@@ -6,13 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="9b950bd6-5948-42cf-8b22-a7bfc86aa0cc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LudumDare56/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LudumDare56/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/Box.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/Box.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/Firefly.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/Firefly.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/Lever.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/Lever.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/Lantern.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/Lantern.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Core/Core.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Core/Core.asmdef" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Enemies/Enemies.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Enemies/Enemies.asmdef" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Enemies/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Enemies/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Fireflies/FirefliesMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Fireflies/FirefliesMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Interactive/InteractiveKeyIndicator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Interactive/InteractiveKeyIndicator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Interactive/LanternsSystem/Lantern.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Interactive/LanternsSystem/Lantern.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Interactive/LeverSystem/Lever.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Interactive/LeverSystem/Lever.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Interactive/ValveSystem/Valve.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Interactive/ValveSystem/Valve.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +24,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.cinemachine@2.10.1/Runtime/Core/CinemachineExtension.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.postprocessing@3.4.0/PostProcessing/Editor/Effects/ColorGradingEditor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0b78209fd00d4f419f30dd210cbab239176600/e2/61587eb3/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0b78209fd00d4f419f30dd210cbab239176600/ed/3dfd09cc/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f5b293c74049457cabc28437c5a763925a00/b3/f3f6bea0/ITickable.cs" root0="SKIP_HIGHLIGHTING" />
@@ -49,8 +52,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature/enemies",
+    "git-widget-placeholder": "feature/movement",
     "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "F:/Programs/Unity/Projects/ludum_dare_56/LudumDare56/Assets/_Source/GameAssembly",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
