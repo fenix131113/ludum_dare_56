@@ -35,7 +35,7 @@ namespace Player
 				return;
 
 			if (!StayInLight)
-				_health.DecreaseHealth(_config.MinusHealthPerTick);
+				_health.DecreaseHealth(_config.MinusHealthPerTick, "Light Is Life");
 			else
 				_health.IncreaseHealth(_config.PlusHealthPerTick);
 		}
