@@ -12,6 +12,7 @@ namespace Enemies
 		[SerializeField] private EnemyVision vision;
 		[SerializeField] private Transform rotatePivot;
 		[SerializeField] private float lookTimeBeforeAttack;
+		[SerializeField] private GameObject damageZone;
 
 		private Rigidbody2D _rb;
 		private bool _rightMove = true;
@@ -19,7 +20,7 @@ namespace Enemies
 		private bool _isRunning;
 		private GameObject _player;
 		private float _lookTimer;
-
+		
 		private void Awake()
 		{
 			_rb = GetComponent<Rigidbody2D>();
@@ -43,8 +44,8 @@ namespace Enemies
 			var xMove = 0f;
 
 			xMove = _isRunning ?
-				  _rightMove ? config.runSpeed * Time.deltaTime : -config.runSpeed * Time.deltaTime
-				: _rightMove ? config.speed * Time.deltaTime : -config.speed * Time.deltaTime;
+				  _rightMove ? config.runSpeed * Time.fixedDeltaTime : -config.runSpeed * Time.fixedDeltaTime
+				: _rightMove ? config.speed * Time.fixedDeltaTime : -config.speed * Time.fixedDeltaTime;
 
 			_rb.velocity = new Vector2(xMove * 500, 0);
 		}
@@ -54,7 +55,10 @@ namespace Enemies
 			SetRotation(isRight);
 
 			if (!vision.IsPlayerSpotted)
+			{
 				_isRunning = false;
+				damageZone.SetActive(false);
+			}
 
 			_rightMove = isRight;
 		}
@@ -98,6 +102,7 @@ namespace Enemies
 		private void RunToPlayer()
 		{
 			DeactivatePlayerLook();
+			damageZone.SetActive(true);
 			_isRunning = true;
 		}
 

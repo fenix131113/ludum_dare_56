@@ -43,6 +43,11 @@ namespace Fireflies
 			if(!_canUseInvisibleModule)
 				return;
 			
+			MakeInvisibleWithoutCooldown();
+		}
+		
+		public void MakeInvisibleWithoutCooldown()
+		{
 			InvisibleModule.Hide(fireflies);
 			playerCollider.enabled = false;
 		}

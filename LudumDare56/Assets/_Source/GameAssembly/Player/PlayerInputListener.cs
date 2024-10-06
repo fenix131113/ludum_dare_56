@@ -4,6 +4,7 @@ using Fireflies;
 using Knight;
 using Unity.Plastic.Antlr3.Runtime.Misc;
 using UnityEngine;
+using Utils;
 using Zenject;
 
 namespace Player
@@ -14,22 +15,30 @@ namespace Player
 		private readonly FirefliesContainer _firefliesContainer;
 		private readonly GameStates _gameStates;
 		private readonly KnightMovement _knightMovement;
+		private readonly PlayerHealth _health;
 
 		public event Action OnInteractiveKeyDown;
 		public event Action OnInteractiveKeyUnPressed;
 
 		[Inject]
 		private PlayerInputListener(FirefliesMovement firefliesMovement, FirefliesContainer firefliesContainer,
-			GameStates gameStates, KnightMovement knightMovement)
+			GameStates gameStates, KnightMovement knightMovement, PlayerHealth health)
 		{
 			_firefliesMovement = firefliesMovement;
 			_firefliesContainer = firefliesContainer;
 			_gameStates = gameStates;
 			_knightMovement = knightMovement;
+			_health = health;
 		}
 
 		public void Tick()
 		{
+			if(_health.IsDead)
+			{
+				ReadGameRestartInput();
+				return;
+			}
+
 			ReadInteractiveKey();
 			
 			if (_gameStates.PlayerType == PlayerType.FIREFLIES)
@@ -38,6 +47,9 @@ namespace Player
 
 		public void FixedTick()
 		{
+			if(_health.IsDead)
+				return;
+
 			if (_gameStates.PlayerType == PlayerType.FIREFLIES)
 			{
 				ReadFirefliesMovementInput();
@@ -49,6 +61,12 @@ namespace Player
 			}
 		}
 
+		private static void ReadGameRestartInput()
+		{
+			if(Input.anyKeyDown)
+				GameRestart.RestartGame();
+		}
+		
 		private void ReadInteractiveKey()
 		{
 			if (Input.GetKeyDown(KeyCode.E))

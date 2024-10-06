@@ -8,7 +8,8 @@ namespace Player.Death
 {
 	public class PlayerDeathCheckerView : MonoBehaviour
 	{
-		[SerializeField] private float deathAnimationDuration;
+		[SerializeField] private float textAnimationDuration;
+		[SerializeField] private float darkFadeAnimationDuration;
 		[SerializeField] private Image deathFader;
 		[SerializeField] private TMP_Text deathText;
 		[SerializeField] private TMP_Text restartLabel;
@@ -22,16 +23,15 @@ namespace Player.Death
 
 		private void ShowDeadScreen(string reason)
 		{
-			Time.timeScale = 0; // Not enough time to do normally :(
-			deathFader.DOFade(1f, deathAnimationDuration);
-			
 			deathText.text = reason;
 			deathText.gameObject.SetActive(true);
 
-			deathText.rectTransform.DOLocalMoveY(0, deathAnimationDuration);
-			DOTween.To(() => deathText.color, x => deathText.color = x, new Color(255, 255, 255, 1f), deathAnimationDuration);
+			var seq = DOTween.Sequence();
 			
-			DOTween.To(() => restartLabel.color, x => restartLabel.color = x, new Color(255, 255, 255, 1f), deathAnimationDuration);
+			seq.Append(deathFader.DOFade(1f, darkFadeAnimationDuration));
+			seq.Append(deathText.rectTransform.DOLocalMoveY(0, textAnimationDuration));
+			seq.Insert(darkFadeAnimationDuration, DOTween.To(() => deathText.color, x => deathText.color = x, new Color(255, 255, 255, 1f), textAnimationDuration));
+			seq.Append(DOTween.To(() => restartLabel.color, x => restartLabel.color = x, new Color(255, 255, 255, 1f), textAnimationDuration));
 		}
 
 		private void Bind()
