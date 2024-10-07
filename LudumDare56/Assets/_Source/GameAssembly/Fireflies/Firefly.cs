@@ -50,14 +50,14 @@ namespace Fireflies
 			};
 		}
 
-		public void StopMoving()
+		private void StopMoving()
 		{
 			_moveTween = null;
 			withPlayer = false;
 			StopAllCoroutines();
 		}
 
-		public void MoveOut(Vector3 toPosition)
+		public Tween MoveOutLocal(Vector3 toPosition)
 		{
 			var animationTime = Random.Range(config.MinMoveTime, config.MaxMoveTime);
 			
@@ -65,6 +65,20 @@ namespace Fireflies
 			spriteRenderer.DOFade(0f, animationTime);
 			DOTween.To(() => fireflyLight.intensity, x => fireflyLight.intensity = x, 0f, animationTime);
 			_moveTween = transform.DOLocalMove(toPosition, animationTime).SetEase(config.EaseType);
+
+			return _moveTween;
+		}
+		
+		public Tween MoveOutGlobal(Vector3 toPosition)
+		{
+			var animationTime = Random.Range(config.MinMoveTime, config.MaxMoveTime);
+			
+			StopMoving();
+			spriteRenderer.DOFade(0f, animationTime);
+			DOTween.To(() => fireflyLight.intensity, x => fireflyLight.intensity = x, 0f, animationTime);
+			_moveTween = transform.DOMove(toPosition, animationTime).SetEase(config.EaseType);
+
+			return _moveTween;
 		}
 
 		public void MoveIn()

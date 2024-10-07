@@ -10,7 +10,7 @@ namespace Fireflies
 		public void Hide(List<Firefly> fireflies)
 		{
 			foreach (var firefly in fireflies)
-				firefly.MoveOut(firefly.transform.localPosition + new Vector3(Random.Range(-2.5f, 2.5f), Random.Range(-2.5f, 2.5f), 0));
+				firefly.MoveOutLocal(firefly.transform.localPosition + new Vector3(Random.Range(-2.5f, 2.5f), Random.Range(-2.5f, 2.5f), 0));
 
 			IsInvisible = true;
 		}

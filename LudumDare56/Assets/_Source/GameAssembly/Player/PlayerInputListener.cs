@@ -42,6 +42,9 @@ namespace Player
 				return;
 			}
 
+			if(!_gameStates.CanControlPlayer)
+				return;
+			
 			ReadMenuInput();
 			ReadInteractiveKey();
 
@@ -62,7 +65,7 @@ namespace Player
 
 		public void FixedTick()
 		{
-			if (_health.IsDead || _gamePauseMenu.IsPaused)
+			if (_health.IsDead || _gamePauseMenu.IsPaused || !_gameStates.CanControlPlayer)
 				return;
 
 			if (_gameStates.PlayerType == PlayerType.FIREFLIES)

@@ -32,7 +32,7 @@ namespace Player
 
 		public void Tick()
 		{
-			if (_gameStates.PlayerType == PlayerType.FIREFLIES && _firefliesContainer.InvisibleModule.IsInvisible)
+			if (_gameStates.PlayerType == PlayerType.FIREFLIES && (_firefliesContainer.InvisibleModule.IsInvisible || !_gameStates.CanControlPlayer))
 				return;
 
 			if (!StayInLight)
