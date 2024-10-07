@@ -6,18 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="9b950bd6-5948-42cf-8b22-a7bfc86aa0cc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LudumDare56/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LudumDare56/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Sprites/slider_volume.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Sprites/slider_volume.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Sprites/volume_shtucka.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Sprites/volume_shtucka.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Core/Game/GameStates.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Core/Game/GameStates.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Fireflies/FirefliesContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Fireflies/FirefliesContainer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Fireflies/FirefliesInvisible.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Fireflies/FirefliesInvisible.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Fireflies/Firefly.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Fireflies/Firefly.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Locations/Village/Locations.Village.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Locations/Village/Locations.Village.asmdef" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Player/HealthLightChecker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Player/HealthLightChecker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Player/PlayerInputListener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Player/PlayerInputListener.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Scenes/Game.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Scenes/Game.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +117,7 @@
       <workItem from="1728127605622" duration="5662000" />
       <workItem from="1728203698246" duration="127000" />
       <workItem from="1728203834944" duration="13761000" />
-      <workItem from="1728290520810" duration="14377000" />
+      <workItem from="1728290520810" duration="15665000" />
     </task>
     <servers />
   </component>
