@@ -1,0 +1,4 @@
+{
+	"name": "Locations.Village",
+	"references":[ "GUID:9b5a6996a5824dbc8b04cfab6453818e", "GUID:4a086202c7d3d60408b6174722f179fe" ]
+}

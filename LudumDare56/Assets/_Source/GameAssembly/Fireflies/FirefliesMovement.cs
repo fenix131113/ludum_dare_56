@@ -10,7 +10,7 @@ namespace Fireflies
 		[SerializeField] private float gravity;
 		[SerializeField] private float groundSafeDistance;
 		[SerializeField] private LayerMask floorLayers;
-		[SerializeField] private CircleCollider2D playerColldier;
+		[SerializeField] private CircleCollider2D playerCollider;
 
 		private Rigidbody2D _rb;
 		private PlayerConfig _config;
@@ -25,7 +25,7 @@ namespace Fireflies
 
 		private void OnDrawGizmosSelected()
 		{
-			if (!playerColldier)
+			if (!playerCollider)
 				return;
 
 			Gizmos.color = Color.yellow;

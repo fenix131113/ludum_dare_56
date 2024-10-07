@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4ecad07522875b541b4477d8d3cf5130
+guid: aec600e7cc1180a44899281a15b6e8f2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: 4
     textureCompression: 1
@@ -123,55 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Village_0
+      name: "\u0424\u041E\u041D \u0414\u0415\u0420\u0415\u0412\u041D\u042F 1_0"
       rect:
         serializedVersion: 2
-        x: 0
-        y: 270
-        width: 964
-        height: 135
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8705cf244b8df414f9b7ab8eb260c8c0
-      internalID: 1590361964
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Village_1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 135
-        width: 964
-        height: 135
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a4f9c2b5a9337534f925f779fd48863f
-      internalID: -1012666652
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Village_2
-      rect:
-        serializedVersion: 2
-        x: 0
+        x: 2
         y: 0
-        width: 964
-        height: 135
+        width: 4757
+        height: 264
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,8 +137,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19fbde9621a80c843bff653ef2b3cec3
-      internalID: -364998945
+      spriteID: 700609aa953534a428260625ba19ba68
+      internalID: 1304760467
       vertices: []
       indices: 
       edges: []
@@ -196,9 +154,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Village_0: 1590361964
-      Village_1: -1012666652
-      Village_2: -364998945
+      "\u0424\u041E\u041D \u0414\u0415\u0420\u0415\u0412\u041D\u042F 1_0": 1304760467
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

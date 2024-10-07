@@ -2,6 +2,7 @@
 using Core.Game;
 using Fireflies;
 using Player.Data;
+using UnityEngine;
 using Zenject;
 
 namespace Player
@@ -35,9 +36,9 @@ namespace Player
 				return;
 
 			if (!StayInLight)
-				_health.DecreaseHealth(_config.MinusHealthPerTick, "Light Is Life");
+				_health.DecreaseHealth(_config.MinusHealthPerTick * Time.deltaTime, "Light Is Life");
 			else
-				_health.IncreaseHealth(_config.PlusHealthPerTick);
+				_health.IncreaseHealth(_config.PlusHealthPerTick * Time.deltaTime);
 		}
 	}
 }

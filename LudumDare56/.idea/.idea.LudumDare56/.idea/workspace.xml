@@ -6,11 +6,28 @@
   <component name="ChangeListManager">
     <list default="true" id="9b950bd6-5948-42cf-8b22-a7bfc86aa0cc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LudumDare56/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LudumDare56/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Data/Enemies/Knight.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Data/Enemies/Knight.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Data/Fireflies/BaseFirefliesConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Data/Fireflies/BaseFirefliesConfig.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/Interactive/Lantern.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/Interactive/Lantern.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Core/Menu/GamePauseMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Core/Menu/GamePauseMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Interactive/LanternsSystem/Lantern.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Interactive/LanternsSystem/Lantern.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Player/HealthIndicator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Player/HealthIndicator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Scenes/Game/Global Volume Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Scenes/Game/Global Volume Profile.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Sprites/ForwardVillage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Sprites/ForwardVillage.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Sprites/MediumVillage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Sprites/MediumVillage.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Sprites/Village.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Sprites/Village.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Sprites/VillageBack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Sprites/VillageBack.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Enemies/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Enemies/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Fireflies/FirefliesMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Fireflies/FirefliesMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Player/HealthLightChecker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Player/HealthLightChecker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Player/PlayerInputListener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Player/PlayerInputListener.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Support/Plugins/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Support/Plugins/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Support/Settings/UniversalRP.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Support/Settings/UniversalRP.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +134,7 @@
       <workItem from="1728127605622" duration="5662000" />
       <workItem from="1728203698246" duration="127000" />
       <workItem from="1728203834944" duration="13761000" />
-      <workItem from="1728290520810" duration="3035000" />
+      <workItem from="1728290520810" duration="9606000" />
     </task>
     <servers />
   </component>

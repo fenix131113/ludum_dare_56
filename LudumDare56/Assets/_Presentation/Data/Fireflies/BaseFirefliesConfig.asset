@@ -17,4 +17,4 @@ MonoBehaviour:
   <MaxMoveTime>k__BackingField: 0.8
   <MinChangeDirectionTime>k__BackingField: 0.4
   <MaxChangeDirectionTime>k__BackingField: 0.8
-  <InvisibleCooldown>k__BackingField: 5
+  <InvisibleCooldown>k__BackingField: 2.5
