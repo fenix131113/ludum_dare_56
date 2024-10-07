@@ -1,4 +1,5 @@
 using Core.Game;
+using Core.Menu;
 using Fireflies;
 using Fireflies.Data;
 using Knight;
@@ -41,6 +42,11 @@ namespace Core
             
             Container.Bind<VolumeProfile>()
                 .FromInstance(postProcessVolume)
+                .AsSingle()
+                .NonLazy();
+
+            Container.Bind<GamePauseMenu>()
+                .FromComponentInHierarchy()
                 .AsSingle()
                 .NonLazy();
         }

@@ -1,5 +1,6 @@
 using Core.Data;
 using Core.Game;
+using Core.Menu;
 using Fireflies;
 using Knight;
 using Unity.Plastic.Antlr3.Runtime.Misc;
@@ -16,38 +17,52 @@ namespace Player
 		private readonly GameStates _gameStates;
 		private readonly KnightMovement _knightMovement;
 		private readonly PlayerHealth _health;
+		private readonly GamePauseMenu _gamePauseMenu;
 
 		public event Action OnInteractiveKeyDown;
 		public event Action OnInteractiveKeyUnPressed;
 
 		[Inject]
 		private PlayerInputListener(FirefliesMovement firefliesMovement, FirefliesContainer firefliesContainer,
-			GameStates gameStates, KnightMovement knightMovement, PlayerHealth health)
+			GameStates gameStates, KnightMovement knightMovement, PlayerHealth health, GamePauseMenu gamePauseMenu)
 		{
 			_firefliesMovement = firefliesMovement;
 			_firefliesContainer = firefliesContainer;
 			_gameStates = gameStates;
 			_knightMovement = knightMovement;
 			_health = health;
+			_gamePauseMenu = gamePauseMenu;
 		}
 
 		public void Tick()
 		{
-			if(_health.IsDead)
+			if (_health.IsDead)
 			{
 				ReadGameRestartInput();
 				return;
 			}
 
+			ReadMenuInput();
 			ReadInteractiveKey();
-			
+
 			if (_gameStates.PlayerType == PlayerType.FIREFLIES)
 				ReadFirefliesInvisibleAbilityInput();
 		}
 
+		private void ReadMenuInput()
+		{
+			if(!Input.GetKeyDown(KeyCode.Escape))
+				return;
+			
+			if (_gamePauseMenu.IsPaused)
+				_gamePauseMenu.UnpauseGame();
+			else
+				_gamePauseMenu.PauseGame();
+		}
+
 		public void FixedTick()
 		{
-			if(_health.IsDead)
+			if (_health.IsDead || _gamePauseMenu.IsPaused)
 				return;
 
 			if (_gameStates.PlayerType == PlayerType.FIREFLIES)
@@ -63,10 +78,10 @@ namespace Player
 
 		private static void ReadGameRestartInput()
 		{
-			if(Input.anyKeyDown)
+			if (Input.anyKeyDown)
 				GameRestart.RestartGame();
 		}
-		
+
 		private void ReadInteractiveKey()
 		{
 			if (Input.GetKeyDown(KeyCode.E))
