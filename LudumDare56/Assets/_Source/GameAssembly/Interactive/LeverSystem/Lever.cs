@@ -10,6 +10,9 @@ namespace Interactive.LeverSystem
 	{
 		[SerializeField] private LayerMask interactLayer;
 		[SerializeField] private bool canSwitchOff;
+		[SerializeField] private SpriteRenderer leverRenderer;
+		[SerializeField] private Sprite activeSprite;
+		[SerializeField] private Sprite inactiveSprite;
 
 		public float Progress => _isOn ? 1f : 0f;
 		public event Action OnProgressChanged;
@@ -23,6 +26,7 @@ namespace Interactive.LeverSystem
 		private void TurnOn()
 		{
 			_isOn = true;
+			leverRenderer.sprite = activeSprite;
 
 			OnProgressChanged?.Invoke();
 		}
@@ -30,6 +34,7 @@ namespace Interactive.LeverSystem
 		private void TurnOff()
 		{
 			_isOn = false;
+			leverRenderer.sprite = inactiveSprite;
 
 			OnProgressChanged?.Invoke();
 		}

@@ -149,7 +149,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.72}
@@ -171,6 +171,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   canSwitchOff: 0
+  leverRenderer: {fileID: 5010757981940373451}
+  activeSprite: {fileID: 973762160, guid: a6a83ea5454cf2340a426cc9a36a0a16, type: 3}
+  inactiveSprite: {fileID: -1426783639, guid: a6a83ea5454cf2340a426cc9a36a0a16, type: 3}
 --- !u!114 &2452393673173153129
 MonoBehaviour:
   m_ObjectHideFlags: 0
