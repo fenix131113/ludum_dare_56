@@ -10,6 +10,9 @@ namespace Interactive.LanternsSystem
 	{
 		[SerializeField] private LayerMask playerMask;
 		[SerializeField] private bool activeOnStart;
+		[SerializeField] private SpriteRenderer lanternRenderer;
+		[SerializeField] private Sprite activatedSprite;
+		[SerializeField] private GameObject lanternLight;
 
 		public float Progress => _isLanternActive ? 1f : 0f;
 		public event Action OnProgressChanged;
@@ -33,6 +36,12 @@ namespace Interactive.LanternsSystem
 			if (_isLanternActive)
 				return;
 
+			if (lanternRenderer)
+				lanternRenderer.sprite = activatedSprite;
+
+			if(lanternLight)
+				lanternLight.SetActive(true);
+			
 			_isLanternActive = true;
 			_healthChecker.StayInLightActivate();
 			OnProgressChanged?.Invoke();

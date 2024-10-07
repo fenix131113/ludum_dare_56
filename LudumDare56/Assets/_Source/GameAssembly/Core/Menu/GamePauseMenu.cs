@@ -26,7 +26,7 @@ namespace Core.Menu
 			menuBlocker.SetActive(false);
 		}
 
-		private void LoadMenu() => SceneManager.LoadScene(0);
+		private static void LoadMenu() => SceneManager.LoadScene(0);
 
 		private void Bind()
 		{
