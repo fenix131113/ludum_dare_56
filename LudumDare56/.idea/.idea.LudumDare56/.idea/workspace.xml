@@ -6,50 +6,54 @@
   <component name="ChangeListManager">
     <list default="true" id="9b950bd6-5948-42cf-8b22-a7bfc86aa0cc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LudumDare56/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LudumDare56/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Animations/Knight.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Animations/Knight.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Animations/PlayerChangePhaseAnim.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Animations/PlayerChangePhaseAnim.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Animations/PlayerInteractAnimation.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Animations/PlayerInteractAnimation.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Animations/PlayerJumpEnd.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Animations/PlayerJumpEnd.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Animations/EnemyRun.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Animations/EnemyRun.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Animations/PlayerJumpStart.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Animations/PlayerJumpStart.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Animations/PlayerJumpStatic.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Animations/PlayerJumpStatic.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Animations/PlayerRunAnimation.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Animations/PlayerRunAnimation.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Data/Enemies/Knight.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Data/Enemies/Knight.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Data/Player/BasePlayerConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Data/Player/BasePlayerConfig.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/-----GENERAL-----.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/-----GENERAL-----.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/Enemy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/Fireflies.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/Fireflies.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/Interactive/Valve.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/Interactive/Valve.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/Interactive/Lantern.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/Interactive/Lantern.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/MusicManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/MusicManager.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Scenes/Castle.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Scenes/Castle.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Scenes/Castle_2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Scenes/Castle_2.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Scenes/Forest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Scenes/Forest.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Scenes/Forest.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Scenes/Forest.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Scenes/Sewage.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Scenes/Sewage.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Scenes/Town.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Scenes/Town.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Scenes/Tunnel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Scenes/Tunnel.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Scenes/Village.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Scenes/Village.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Sprites/Player/JumpSheet.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Sprites/Player/JumpSheet.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Core/Game/Core.Game.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Core/Game/Core.Game.asmdef" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Core/Game/Core.Game.asmdef.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Core/Game/Core.Game.asmdef.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Core/Game/GameStates.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Core/Game/GameStates.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Sprites/Locatons/Forest/Forest.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Sprites/Locatons/Forest/Forest.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Sprites/Locatons/Forest/Forest_Second.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Sprites/Locatons/Forest/Forest_Second.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Core/Game/MusicManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Core/Game/MusicManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Core/MainInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Core/MainInstaller.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Core/Menu/Core.Menu.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Core/Menu/Core.Menu.asmdef" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Core/Menu/GamePauseMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Core/Menu/GamePauseMenu.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Enemies/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Enemies/Enemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Fireflies/FirefliesContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Fireflies/FirefliesContainer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Fireflies/FirefliesInvisible.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Fireflies/FirefliesInvisible.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Interactive/InteractiveKeyIndicator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Interactive/InteractiveKeyIndicator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Interactive/ValveSystem/Valve.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Interactive/ValveSystem/Valve.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Interactive/ValveSystem/ValveSystem.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Interactive/ValveSystem/ValveSystem.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Enemies/EnemyVision.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Enemies/EnemyVision.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Interactive/ButtonSystem/Button.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Interactive/ButtonSystem/Button.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Interactive/LanternsSystem/Lantern.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Interactive/LanternsSystem/Lantern.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Knight/KnightMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Knight/KnightMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Locations/Village/ExitTube.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Locations/Village/ExitTube.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Locations/Village/Locations.Village.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Locations/Village/Locations.Village.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Locations/SecondCastle/Barrel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Locations/SecondCastle/Barrel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Locations/SecondCastle/DeathAltar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Locations/SecondCastle/DeathAltar.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Locations/SecondCastle/SecondCastle.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Locations/SecondCastle/SecondCastle.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Locations/Village/VillageEnemyTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Locations/Village/VillageEnemyTrigger.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Player/Data/PlayerConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Player/Data/PlayerConfig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Player/Death/Player.Death.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Player/Death/Player.Death.asmdef" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Player/Death/PlayerDeathCheckerView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Player/Death/PlayerDeathCheckerView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Player/Player.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Player/Player.asmdef" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Player/PlayerInputListener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Player/PlayerInputListener.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Utils/Utils.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Utils/Utils.asmdef" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Player/HealthIndicator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Player/HealthIndicator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Player/PlayerHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Player/PlayerHealth.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Utils/CameraShaker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Utils/CameraShaker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Utils/TextOutFader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Utils/TextOutFader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Support/Plugins/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Support/Plugins/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DpaMonitoringSettings">
+    <option name="autoShow" value="false" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -64,6 +68,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/e3/c18c2c37/Action`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f5b293c74049457cabc28437c5a763925a00/b3/f3f6bea0/ITickable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Source/GameAssembly/Core/Menu/MainMenu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Source/GameAssembly/Core/Menu/MainMenuStory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Source/GameAssembly/Enemies/Data/EnemyConfig.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Source/GameAssembly/Enemies/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Source/GameAssembly/Fireflies/Data/FirefliesConfig.cs" root0="FORCE_HIGHLIGHTING" />
@@ -89,21 +94,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/Programs/Unity/Projects/ludum_dare_56/LudumDare56/Assets/_Source/GameAssembly&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "develop",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "F:/Programs/Unity/Projects/ludum_dare_56/LudumDare56/Assets/_Source",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="F:\Programs\Unity\Versions\2022.3.46f1\Editor\Unity.exe" />
@@ -131,10 +137,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="13748">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="13748" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -159,7 +165,9 @@
       <workItem from="1728203698246" duration="127000" />
       <workItem from="1728203834944" duration="13761000" />
       <workItem from="1728290520810" duration="36857000" />
-      <workItem from="1728391626788" duration="19980000" />
+      <workItem from="1728391626788" duration="20518000" />
+      <workItem from="1728464326882" duration="96000" />
+      <workItem from="1728464431967" duration="27338000" />
     </task>
     <servers />
   </component>

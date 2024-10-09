@@ -11,5 +11,6 @@ namespace Player.Data
 		[field: SerializeField] public float FirefliesSpeed { get; private set; }
 		[field: SerializeField] public float KnightSpeed { get; private set; }
 		[field: SerializeField] public float KnightJumpForce { get; private set; }
+		[field: SerializeField] public AudioClip[] DeathSounds { get; private set; }
 	}
 }

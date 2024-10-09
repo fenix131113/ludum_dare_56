@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 20936d9fe8a7d1c4eb92e80e8a74ca65
+guid: f809c2926debf314db245eb40ee233ca
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,91 +121,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Forest_First_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 810
-        width: 1080
-        height: 270
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b0946c60d89d2524e95525af5e253a3e
-      internalID: 785689041
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Forest_First_1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 540
-        width: 1080
-        height: 270
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 08b6ff6a8a3d547468fabb549edfab97
-      internalID: -2041135393
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Forest_First_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1080
-        height: 270
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 51c286e8c6c3bfe489e24b13a3fca615
-      internalID: -1156286857
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Forest_First_3
-      rect:
-        serializedVersion: 2
-        x: 430
-        y: 463
-        width: 115
-        height: 66
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a9a8df716443950439cbbc8d9312dc3f
-      internalID: 611378578
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -216,11 +132,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Forest_First_0: 785689041
-      Forest_First_1: -2041135393
-      Forest_First_2: -1156286857
-      Forest_First_3: 611378578
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

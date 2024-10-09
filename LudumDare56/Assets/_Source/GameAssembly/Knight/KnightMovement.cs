@@ -14,6 +14,8 @@ namespace Knight
 		[SerializeField] private SpriteRenderer knightRenderer;
 		[SerializeField] private float floorDistanceCheck;
 		[SerializeField] private LayerMask groundLayer;
+		[SerializeField] private AudioClip stepSound;
+		[SerializeField] private AudioSource oneShotSource;
 
 		private PlayerConfig _config;
 		private Rigidbody2D _rb;
@@ -50,6 +52,8 @@ namespace Knight
 		{
 			_rb.velocity = new Vector2(_currentVelocity.x * _config.KnightSpeed, _rb.velocity.y);
 		}
+
+		public void StepSoundPlay() => oneShotSource.PlayOneShot(stepSound, 0.3f);
 
 		public void Move(Vector2 moveVector)
 		{

@@ -9,10 +9,12 @@ namespace Locations.SecondCastle
         [SerializeField] private float deactivatingDeathTime;
         [SerializeField] private Rigidbody2D rb;
         [SerializeField] private GameObject damageZone;
+        [SerializeField] private AudioSource barrelSource;
         
         public void ActivateBarrel()
         {
             rb.isKinematic = false;
+            barrelSource.Play();
             StartCoroutine(DeactivateBarrelDamageCoroutine());
         } 
         
@@ -20,6 +22,7 @@ namespace Locations.SecondCastle
         {
             yield return new WaitForSeconds(deactivatingDeathTime);
             
+            barrelSource.Stop();
             damageZone.SetActive(false);
         }
     }

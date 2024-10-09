@@ -24,28 +24,31 @@ namespace Core.Game
 			{
 				case 0:
 				case 1:
+				case 7:
 				case 8:
 					if (playSource.clip == musics[0])
 						break;
+					
+					playSource.volume = 1f;
 					playSource.clip = musics[0];
 					playSource.Play();
 					break;
 				case 2:
 					playSource.clip = musics[2];
-					playSource.Play();
-					break;
-				case 5:
-				case 6:
-				case 7:
-					if (playSource.clip == musics[0])
-						break;
-					playSource.clip = musics[1];
+					playSource.volume = 1f;
 					playSource.Play();
 					break;
 				case 3:
-					playSource.Stop();
-					break;
 				case 4:
+				case 6:
+					if (playSource.clip == musics[1])
+						break;
+					
+					playSource.volume = 0.05f;
+					playSource.clip = musics[1];
+					playSource.Play();
+					break;
+				case 5:
 					playSource.Stop();
 					break;
 			}

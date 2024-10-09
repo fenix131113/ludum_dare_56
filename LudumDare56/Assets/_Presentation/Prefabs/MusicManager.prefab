@@ -61,8 +61,8 @@ MonoBehaviour:
   playSource: {fileID: 6450534473472242225}
   musics:
   - {fileID: 8300000, guid: f49ad78d25cbf874ba64187ebc81a603, type: 3}
-  - {fileID: 8300000, guid: c112276030651104db3b8f0927238465, type: 3}
   - {fileID: 8300000, guid: efdf8e93a419ce94ea60c47646a5677d, type: 3}
+  - {fileID: 8300000, guid: c112276030651104db3b8f0927238465, type: 3}
   - {fileID: 8300000, guid: 2d00d36bb35cd2e42a56d85cf3e55a04, type: 3}
 --- !u!1 &6020233007688121817
 GameObject:
@@ -108,7 +108,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f49ad78d25cbf874ba64187ebc81a603, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0

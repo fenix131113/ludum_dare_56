@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1786643322579968440}
   - component: {fileID: 2091251900590222608}
+  - component: {fileID: 264066253405706934}
   m_Layer: 0
   m_Name: Virtual Camera
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 845017441917385818}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 210.19, y: -1.0930004, z: -10.914805}
+  m_LocalPosition: {x: 210.19, y: -1.0930002, z: -10.914805}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -72,6 +73,19 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 2724791646900157655}
+--- !u!114 &264066253405706934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 845017441917385818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5620b4136867a54e821f5ff002668d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  noiseSettings: {fileID: 0}
 --- !u!1 &1069515326516083239
 GameObject:
   m_ObjectHideFlags: 0
@@ -358,6 +372,134 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &2360184804543845169
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8401107897865992311}
+  - component: {fileID: 7823556242623334795}
+  m_Layer: 0
+  m_Name: OneShotSource
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8401107897865992311
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2360184804543845169}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 247199908882234910}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &7823556242623334795
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2360184804543845169}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &2663949176789554820
 GameObject:
   m_ObjectHideFlags: 0
@@ -1124,6 +1266,7 @@ GameObject:
   - component: {fileID: 2724791646900157655}
   - component: {fileID: 614935428471724626}
   - component: {fileID: 4257593376294852847}
+  - component: {fileID: 7757624869537544392}
   m_Layer: 0
   m_Name: cm
   m_TagString: Untagged
@@ -1201,6 +1344,23 @@ MonoBehaviour:
   m_MaximumFOV: 60
   m_MinimumOrthoSize: 4.5
   m_MaximumOrthoSize: 5000
+--- !u!114 &7757624869537544392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5618148303206099514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NoiseProfile: {fileID: 11400000, guid: 69ce8388f6785dd4c8c39915efece2f4, type: 2}
+  m_PivotOffset: {x: 0, y: 0, z: 0}
+  m_AmplitudeGain: 1
+  m_FrequencyGain: 1
+  mNoiseOffsets: {x: -616.9946, y: -967.77893, z: 576.3147}
 --- !u!1 &5799106281599316921
 GameObject:
   m_ObjectHideFlags: 0
@@ -1758,10 +1918,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1204701805584611943}
   knightRenderer: {fileID: 6858182648447483343}
-  floorDistanceCheck: 0.95
+  floorDistanceCheck: 1.05
   groundLayer:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 1025
+  stepSound: {fileID: 8300000, guid: eeb92efe6783d064c993f859ede62437, type: 3}
+  oneShotSource: {fileID: 7823556242623334795}
 --- !u!95 &1204701805584611943
 Animator:
   serializedVersion: 5
@@ -1871,6 +2033,7 @@ GameObject:
   - component: {fileID: 247199908882234910}
   - component: {fileID: 8205622132281435707}
   - component: {fileID: 4108776494511538398}
+  - component: {fileID: 2791666886997555549}
   m_Layer: 0
   m_Name: -----GENERAL-----
   m_TagString: Untagged
@@ -1900,6 +2063,7 @@ Transform:
   - {fileID: 1621648075017588156}
   - {fileID: 8689079445536379175}
   - {fileID: 7256208665756622885}
+  - {fileID: 8401107897865992311}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8205622132281435707
@@ -1932,6 +2096,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startPlayerType: 0
+--- !u!114 &2791666886997555549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8276711120306506777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96d266ae20b74768bd6973bfa5bbb3c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  source: {fileID: 7823556242623334795}
+  heartSound: {fileID: 8300000, guid: dc920437f5318484ea83b77918f68436, type: 3}
+  soundCheckInterval: 2.5
+  cameraShaker: {fileID: 264066253405706934}
 --- !u!1 &8431847924309135283
 GameObject:
   m_ObjectHideFlags: 0
@@ -2011,6 +2191,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerConfig: {fileID: 11400000, guid: f2adb91d5c85d7e4cac42c69c9b629ef, type: 2}
   firefliesConfig: {fileID: 11400000, guid: d581820c53da2b146b1345fb7ee262cf, type: 2}
+  oneShotAudioSource: {fileID: 7823556242623334795}
   postProcessVolume: {fileID: 11400000, guid: 1c1e846d38d27b64d9d3fbb5e0398a73, type: 2}
 --- !u!1 &8493221306700816804
 GameObject:
@@ -2040,8 +2221,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8493221306700816804}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 210.19, y: -1.0930004, z: -10.914805}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 240.703, y: -12.485001, z: -10.914805}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2082,7 +2263,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 4.5
+  orthographic size: 3.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

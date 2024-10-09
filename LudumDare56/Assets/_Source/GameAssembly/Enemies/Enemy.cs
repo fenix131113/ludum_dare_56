@@ -1,8 +1,6 @@
 using Enemies.Data;
-using Fireflies;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
-using Zenject;
 
 namespace Enemies
 {
@@ -25,6 +23,10 @@ namespace Enemies
 		[SerializeField] private float groundSafeDistance;
 		[SerializeField] private LayerMask floorLayers;
 		[SerializeField] private Animator anim;
+		[SerializeField] private AudioSource audioSource;
+		[SerializeField] private AudioClip upSound;
+		[SerializeField] private AudioClip downSound;
+		[SerializeField] private AudioSource angrySource;
 
 		private Rigidbody2D _rb;
 		private bool _rightMove = true;
@@ -32,10 +34,6 @@ namespace Enemies
 		private bool _isRunning;
 		private GameObject _player;
 		private float _lookTimer;
-		private FirefliesContainer _firefliesContainer;
-
-		[Inject]
-		private void Construct(FirefliesContainer firefliesContainer) => _firefliesContainer = firefliesContainer;
 
 		private void OnDrawGizmosSelected()
 		{
@@ -62,6 +60,10 @@ namespace Enemies
 				CheckPointsLimit();
 		}
 
+		public void PlayUpSound() => audioSource.PlayOneShot(upSound);
+
+		public void PlayDownSound() => audioSource.PlayOneShot(downSound);
+
 		private void CheckPointsLimit()
 		{
 			if (transform.position.x >= rightPatrolPoint.position.x)
@@ -70,8 +72,9 @@ namespace Enemies
 				SetMoveRotate(true);
 		}
 
-		public void StartRunManually()
+		public void StartRunManually(bool isRight = true)
 		{
+			SetMoveRotate(isRight);
 			RunToPlayer();
 			visionLight.color = spottedGradient.Evaluate(1);
 		}
@@ -109,6 +112,8 @@ namespace Enemies
 			if (!vision.IsPlayerSpotted)
 			{
 				_isRunning = false;
+
+				angrySource.Stop();
 				anim.SetBool(IsRunning, false);
 				damageZone.SetActive(false);
 			}
@@ -157,6 +162,10 @@ namespace Enemies
 			DeactivatePlayerLook();
 			damageZone.SetActive(true);
 			_isRunning = true;
+			
+			if (!angrySource.isPlaying)
+				angrySource.Play();
+
 			anim.SetTrigger(Attack);
 			anim.SetBool(IsRunning, true);
 		}

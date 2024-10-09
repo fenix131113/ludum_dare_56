@@ -20,11 +20,13 @@ namespace Interactive.ButtonSystem
 		private void Activate()
 		{
 			buttonRenderer.sprite = activateButtonSprite;
+			OnProgressChanged?.Invoke();
 		}
 
 		private void Deactivate()
 		{
 			buttonRenderer.sprite = inactivateButtonSprite;
+			OnProgressChanged?.Invoke();
 		}
 		
 		private void OnTriggerEnter2D(Collider2D other)
@@ -35,8 +37,8 @@ namespace Interactive.ButtonSystem
 			if (_currentObject)
 				return;
 			
-			Activate();
 			_currentObject = other.gameObject;
+			Activate();
 		}
 
 		private void OnTriggerExit2D(Collider2D other)
@@ -47,8 +49,8 @@ namespace Interactive.ButtonSystem
 			if (other.gameObject != _currentObject)
 				return;
 			
-			Deactivate();
 			_currentObject = null;
+			Deactivate();
 		}
 	}
 }

@@ -6,6 +6,7 @@ using Knight;
 using Player;
 using Player.Data;
 using UnityEngine;
+using UnityEngine.Audio;
 using Zenject;
 using UnityEngine.Rendering;
 
@@ -15,6 +16,7 @@ namespace Core
     {
         [SerializeField] private PlayerConfig playerConfig;
         [SerializeField] private FirefliesConfig firefliesConfig;
+        [SerializeField] private AudioSource oneShotAudioSource;
         
         [SerializeField] private VolumeProfile postProcessVolume;
         
@@ -47,6 +49,11 @@ namespace Core
 
             Container.Bind<GamePauseMenu>()
                 .FromComponentInHierarchy()
+                .AsSingle()
+                .NonLazy();
+
+            Container.Bind<AudioSource>()
+                .FromInstance(oneShotAudioSource)
                 .AsSingle()
                 .NonLazy();
         }

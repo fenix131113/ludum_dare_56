@@ -11,6 +11,7 @@ namespace Locations.SecondCastle
         [SerializeField] private float toDeathAnimTime;
         [SerializeField] private float toDefaultAnimTime;
         [SerializeField] private CameraShaker cameraShaker;
+        [SerializeField] private AudioSource lightSoundsSource;
 
         private void Start() => StartCoroutine(StartDeathCoroutine());
 
@@ -19,7 +20,8 @@ namespace Locations.SecondCastle
         {
             defaultAltar.SetActive(true);
             deathAltar.SetActive(false);
-            cameraShaker.StopShake();
+            lightSoundsSource.Stop();
+            cameraShaker.StopShake(gameObject);
             
             yield return new WaitForSeconds(toDeathAnimTime);
             
@@ -30,7 +32,8 @@ namespace Locations.SecondCastle
         {
             defaultAltar.SetActive(false);
             deathAltar.SetActive(true);
-            cameraShaker.StartShake();
+            lightSoundsSource.Play();
+            cameraShaker.StartShake(gameObject);
             
             yield return new WaitForSeconds(toDefaultAnimTime);
             

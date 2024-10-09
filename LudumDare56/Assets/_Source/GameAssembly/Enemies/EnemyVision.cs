@@ -7,6 +7,7 @@ namespace Enemies
 	public class EnemyVision : MonoBehaviour
 	{
 		[SerializeField] private LayerMask playerMask;
+		[SerializeField] private AudioSource angrySource;
 		
 		public bool IsPlayerSpotted { get; private set; }
 		public event Action<GameObject> OnPlayerDetected;
@@ -16,7 +17,9 @@ namespace Enemies
 		{
 			if(!LayerService.CheckLayersEquality(other.gameObject.layer, playerMask)) return;
 			
+			
 			IsPlayerSpotted = true;
+			angrySource.Play();
 			OnPlayerDetected?.Invoke(other.gameObject);
 		}
 
@@ -25,6 +28,7 @@ namespace Enemies
 			if(!LayerService.CheckLayersEquality(other.gameObject.layer, playerMask)) return;
 
 			IsPlayerSpotted = false;
+			angrySource.Stop();
 			OnPlayerGone?.Invoke();
 		}
 	}

@@ -8,6 +8,7 @@ namespace Locations.Village
     {
         [SerializeField] private LayerMask interactLayer;
         [SerializeField] private Enemy enemy;
+        [SerializeField] private bool isRight = true;
 
         private bool _isActivated;
         
@@ -23,7 +24,7 @@ namespace Locations.Village
         private void SendEnemy()
         {
             enemy.gameObject.SetActive(true);
-            enemy.StartRunManually();
+            enemy.StartRunManually(isRight);
         }
     }
 }

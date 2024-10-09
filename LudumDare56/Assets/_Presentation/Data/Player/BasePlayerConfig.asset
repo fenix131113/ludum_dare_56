@@ -13,8 +13,14 @@ MonoBehaviour:
   m_Name: BasePlayerConfig
   m_EditorClassIdentifier: 
   <MaxHealth>k__BackingField: 1
-  <MinusHealthPerTick>k__BackingField: 0.1
+  <MinusHealthPerTick>k__BackingField: 0.08
   <PlusHealthPerTick>k__BackingField: 0.3
   <FirefliesSpeed>k__BackingField: 25
   <KnightSpeed>k__BackingField: 2
-  <KnightJumpForce>k__BackingField: 300
+  <KnightJumpForce>k__BackingField: 325
+  <DeathSounds>k__BackingField:
+  - {fileID: 8300000, guid: a25690fba82672247b40efbf6b49825e, type: 3}
+  - {fileID: 8300000, guid: f27572df81b0a01488a10498a3793e35, type: 3}
+  - {fileID: 8300000, guid: b8d7e38d1463f71488e4f228a4ea72ff, type: 3}
+  - {fileID: 8300000, guid: 2e012be5c533db94e8cc783697d0e301, type: 3}
+  - {fileID: 8300000, guid: 6708076eb05358d428f15abe81050e68, type: 3}

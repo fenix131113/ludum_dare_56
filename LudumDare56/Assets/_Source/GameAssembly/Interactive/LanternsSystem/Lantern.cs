@@ -13,6 +13,7 @@ namespace Interactive.LanternsSystem
 		[SerializeField] private SpriteRenderer lanternRenderer;
 		[SerializeField] private Sprite activatedSprite;
 		[SerializeField] private GameObject lanternLight;
+		[SerializeField] private AudioSource soundSource;
 
 		public float Progress => _isLanternActive ? 1f : 0f;
 		public event Action OnProgressChanged;
@@ -43,6 +44,7 @@ namespace Interactive.LanternsSystem
 				lanternLight.SetActive(true);
 			
 			_isLanternActive = true;
+			soundSource.Play();
 			_healthChecker.StayInLightActivate();
 			OnProgressChanged?.Invoke();
 		}
