@@ -36,27 +36,37 @@ namespace Player
 
 		public void Tick()
 		{
-			if (_health.IsDead)
+			if (_gameStates.CanRestartGame)
 			{
 				ReadGameRestartInput();
 				return;
 			}
 
-			if(!_gameStates.CanControlPlayer)
+			if (!_gameStates.CanControlPlayer)
 				return;
-			
+
 			ReadMenuInput();
 			ReadInteractiveKey();
 
 			if (_gameStates.PlayerType == PlayerType.FIREFLIES)
 				ReadFirefliesInvisibleAbilityInput();
+			else
+				ReadKnightJumpInput();
+		}
+
+		private void ReadKnightJumpInput()
+		{
+			if (!Input.GetKeyDown(KeyCode.Space))
+				return;
+
+			_knightMovement.Jump();
 		}
 
 		private void ReadMenuInput()
 		{
-			if(!Input.GetKeyDown(KeyCode.Escape))
+			if (!Input.GetKeyDown(KeyCode.Escape))
 				return;
-			
+
 			if (_gamePauseMenu.IsPaused)
 				_gamePauseMenu.UnpauseGame();
 			else
@@ -65,18 +75,13 @@ namespace Player
 
 		public void FixedTick()
 		{
-			if (_health.IsDead || _gamePauseMenu.IsPaused || !_gameStates.CanControlPlayer)
+			if (_gamePauseMenu.IsPaused)
 				return;
 
 			if (_gameStates.PlayerType == PlayerType.FIREFLIES)
-			{
 				ReadFirefliesMovementInput();
-				ReadFirefliesInvisibleAbilityInput();
-			}
 			else
-			{
 				ReadKnightMovementInput();
-			}
 		}
 
 		private static void ReadGameRestartInput()
@@ -97,6 +102,9 @@ namespace Player
 		{
 			var moveVector = new Vector2(Input.GetAxisRaw("Horizontal"), 0);
 
+			if (_health.IsDead || !_gameStates.CanControlPlayer)
+				moveVector = Vector2.zero;
+			
 			_knightMovement.Move(moveVector);
 		}
 
@@ -115,6 +123,9 @@ namespace Player
 		{
 			var inputVector = new Vector2(Input.GetAxisRaw("Horizontal"), 0);
 
+			if (_health.IsDead || !_gameStates.CanControlPlayer)
+				inputVector = Vector2.zero;
+			
 			_firefliesMovement.Move(inputVector.normalized);
 		}
 	}

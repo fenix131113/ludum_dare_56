@@ -1,0 +1,8 @@
+﻿{
+  "name": "EndLocation",
+  "references": [
+    "GUID:9b5a6996a5824dbc8b04cfab6453818e",
+    "GUID:4b3ee88e0bc6429090a98f840534fba2",
+    "GUID:cbe18ac50f9750547af572fdcf026ff0"
+  ]
+}

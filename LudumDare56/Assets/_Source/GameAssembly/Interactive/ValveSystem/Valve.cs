@@ -9,8 +9,10 @@ namespace Interactive.ValveSystem
 	public class Valve : MonoBehaviour, IInteractableProgress
 	{
 		[SerializeField] private LayerMask interactiveLayer;
-		[SerializeField] private float progressSpeed;
-		[SerializeField] private float rotateSpeed;
+		[SerializeField] private float progressSpeedUp;
+		[SerializeField] private float progressSpeedDown;
+		[SerializeField] private float rotateOnSpeed;
+		[SerializeField] private float rotateOffSpeed;
 
 		public float Progress { get; private set; }
 
@@ -74,13 +76,13 @@ namespace Interactive.ValveSystem
 			switch (_isRotating)
 			{
 				case true when Progress < 1:
-					transform.eulerAngles -= Vector3.forward * (rotateSpeed * Time.deltaTime);
-					Progress = Mathf.Clamp(Progress + Time.deltaTime * progressSpeed, 0, 1);
+					transform.eulerAngles -= Vector3.forward * (rotateOnSpeed * Time.deltaTime);
+					Progress = Mathf.Clamp(Progress + Time.deltaTime * progressSpeedUp, 0, 1);
 					OnProgressChanged?.Invoke();
 					break;
 				case false when Progress > 0:
-					transform.eulerAngles += Vector3.forward * (rotateSpeed * Time.deltaTime);
-					Progress = Mathf.Clamp(Progress - Time.deltaTime * progressSpeed, 0, 1);
+					transform.eulerAngles += Vector3.forward * (rotateOffSpeed * Time.deltaTime);
+					Progress = Mathf.Clamp(Progress - Time.deltaTime * progressSpeedDown, 0, 1);
 					OnProgressChanged?.Invoke();
 					break;
 			}

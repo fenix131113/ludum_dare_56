@@ -1,11 +1,16 @@
 using Enemies.Data;
+using Fireflies;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
+using Zenject;
 
 namespace Enemies
 {
 	public class Enemy : MonoBehaviour
 	{
+		private static readonly int Attack = Animator.StringToHash("Attack");
+		private static readonly int IsRunning = Animator.StringToHash("IsRunning");
+
 		[SerializeField] private Gradient spottedGradient = new();
 		[SerializeField] private Light2D visionLight;
 		[SerializeField] private EnemyConfig config;
@@ -19,6 +24,7 @@ namespace Enemies
 		[SerializeField] private float gravity;
 		[SerializeField] private float groundSafeDistance;
 		[SerializeField] private LayerMask floorLayers;
+		[SerializeField] private Animator anim;
 
 		private Rigidbody2D _rb;
 		private bool _rightMove = true;
@@ -26,6 +32,10 @@ namespace Enemies
 		private bool _isRunning;
 		private GameObject _player;
 		private float _lookTimer;
+		private FirefliesContainer _firefliesContainer;
+
+		[Inject]
+		private void Construct(FirefliesContainer firefliesContainer) => _firefliesContainer = firefliesContainer;
 
 		private void OnDrawGizmosSelected()
 		{
@@ -74,7 +84,7 @@ namespace Enemies
 			var xMove = 0f;
 
 			xMove = _isRunning
-				? _rightMove 
+				? _rightMove
 					? config.runSpeed * Time.fixedDeltaTime
 					: -config.runSpeed * Time.fixedDeltaTime
 				: _rightMove
@@ -99,6 +109,7 @@ namespace Enemies
 			if (!vision.IsPlayerSpotted)
 			{
 				_isRunning = false;
+				anim.SetBool(IsRunning, false);
 				damageZone.SetActive(false);
 			}
 
@@ -108,7 +119,7 @@ namespace Enemies
 		public void SetRotation(bool isRight)
 		{
 			var multiplier = isRight != _rightMove ? -1 : 1;
- 
+
 			rotatePivot.localScale = new Vector3(rotatePivot.localScale.x * multiplier, transform.localScale.y,
 				transform.localScale.z);
 		}
@@ -146,6 +157,8 @@ namespace Enemies
 			DeactivatePlayerLook();
 			damageZone.SetActive(true);
 			_isRunning = true;
+			anim.SetTrigger(Attack);
+			anim.SetBool(IsRunning, true);
 		}
 
 		private void Bind()

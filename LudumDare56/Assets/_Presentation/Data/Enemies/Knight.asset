@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Knight
   m_EditorClassIdentifier: 
   speed: 0.2
-  runSpeed: 0.75
+  runSpeed: 0.65

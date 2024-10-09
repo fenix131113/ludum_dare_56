@@ -4,10 +4,12 @@ namespace Core.Game
 {
 	public class GameStates
 	{
-		public PlayerType PlayerType { get; private set; } = PlayerType.FIREFLIES;
+		public PlayerType PlayerType { get; private set; } = PlayerType.KNIGHT;
 		public bool CanControlPlayer { get; private set; } = true;
+		public bool CanRestartGame { get; private set; }
 		
 		public void ChangePlayerType(PlayerType playerType) => PlayerType = playerType;
 		public void SetControlState(bool state) => CanControlPlayer = state;
+		public void SetRestartGameAbility(bool state) => CanRestartGame = state;
 	}
 }

@@ -76,7 +76,7 @@ namespace Interactive
 			_indicatorSequence = DOTween.Sequence();
 
 			_indicatorSequence.Append(keyIndicatorRenderer.transform.DOMoveY(
-				keyIndicatorRenderer.transform.position.y + indicatorYOffset, animationDuration));
+				_startIndicatorY + indicatorYOffset, animationDuration));
 
 			_indicatorSequence.Insert(0,
 				DOTween.To(() => keyIndicatorRenderer.color, x => keyIndicatorRenderer.color = x,

@@ -1,0 +1,19 @@
+{
+    "name": "Locations.Sewage",
+    "rootNamespace": "",
+    "references": [
+        "GUID:15fc0a57446b3144c949da3e2b9737a9",
+        "GUID:bf70c8499c4a4e74a82579cc9651319f",
+        "GUID:9b5a6996a5824dbc8b04cfab6453818e",
+        "GUID:cbe18ac50f9750547af572fdcf026ff0"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

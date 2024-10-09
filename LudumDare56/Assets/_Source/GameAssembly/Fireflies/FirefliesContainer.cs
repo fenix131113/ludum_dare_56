@@ -60,6 +60,7 @@ namespace Fireflies
 			if (!_canUseInvisibleModule)
 				return;
 
+			_canUseInvisibleModule = false;
 			MakeInvisibleWithoutCooldown();
 		}
 
@@ -78,8 +79,6 @@ namespace Fireflies
 
 		private IEnumerator InvisibleCooldownCoroutine()
 		{
-			_canUseInvisibleModule = false;
-
 			yield return new WaitForSeconds(_config.InvisibleCooldown);
 
 			_canUseInvisibleModule = true;

@@ -1,3 +1,4 @@
 {
-	"name": "Core.Menu"
+	"name": "Core.Menu",
+	"references":[ "GUID:4b3ee88e0bc6429090a98f840534fba2" ]
 }

@@ -103,8 +103,10 @@ MonoBehaviour:
   interactiveLayer:
     serializedVersion: 2
     m_Bits: 8
-  progressSpeed: 1
-  rotateSpeed: 180
+  progressSpeedUp: 0.5
+  progressSpeedDown: 0.25
+  rotateOnSpeed: 180
+  rotateOffSpeed: 180
 --- !u!58 &9028941725282725322
 CircleCollider2D:
   m_ObjectHideFlags: 0

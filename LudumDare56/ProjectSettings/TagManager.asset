@@ -16,7 +16,7 @@ TagManager:
   - Enemy
   - Interactable
   - EnemyBlock
-  - 
+  - LightIgnore
   - 
   - 
   - 
@@ -45,6 +45,9 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: IgnoreLightDefault
+    uniqueID: 885763037
     locked: 0
   - name: Forward
     uniqueID: 1501402955

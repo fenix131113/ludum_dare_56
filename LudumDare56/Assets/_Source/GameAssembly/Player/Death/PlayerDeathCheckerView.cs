@@ -1,4 +1,5 @@
-﻿using DG.Tweening;
+﻿using Core.Game;
+using DG.Tweening;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -15,9 +16,14 @@ namespace Player.Death
 		[SerializeField] private TMP_Text restartLabel;
 		
 		private PlayerHealth _playerHealth;
+		private GameStates _gameStates;
 		
 		[Inject]
-		public void Construct(PlayerHealth playerHealth) => _playerHealth = playerHealth;
+		public void Construct(PlayerHealth playerHealth, GameStates gameStates)
+		{
+			_playerHealth = playerHealth;
+			_gameStates = gameStates;
+		}
 
 		private void Awake() => Bind();
 
@@ -29,7 +35,12 @@ namespace Player.Death
 			var seq = DOTween.Sequence();
 			
 			seq.Append(deathFader.DOFade(1f, darkFadeAnimationDuration));
-			seq.Append(deathText.rectTransform.DOLocalMoveY(0, textAnimationDuration));
+			
+			Tween deathTextTween = deathText.rectTransform.DOLocalMoveY(0, textAnimationDuration);
+			
+			deathTextTween.OnComplete(() => _gameStates.SetRestartGameAbility(true));
+			
+			seq.Append(deathTextTween);
 			seq.Insert(darkFadeAnimationDuration, DOTween.To(() => deathText.color, x => deathText.color = x, new Color(255, 255, 255, 1f), textAnimationDuration));
 			seq.Append(DOTween.To(() => restartLabel.color, x => restartLabel.color = x, new Color(255, 255, 255, 1f), textAnimationDuration));
 		}

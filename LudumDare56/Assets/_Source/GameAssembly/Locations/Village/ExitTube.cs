@@ -1,6 +1,7 @@
 using Core.Game;
 using Fireflies;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Utils;
 using Zenject;
 
@@ -10,6 +11,7 @@ namespace Locations.Village
 	{
 		[SerializeField] private LayerMask interactLayer;
 		[SerializeField] private Transform tubePoint;
+		[SerializeField] private int loadSceneIndex;
 		
 		private FirefliesContainer _firefliesContainer;
 		private GameStates _gameStates;
@@ -30,7 +32,7 @@ namespace Locations.Village
 
 		private void ExitLogic()
 		{
-			// Load next level
+			SceneManager.LoadScene(loadSceneIndex);
 		}
 		
 		private void OnTriggerEnter2D(Collider2D other)
