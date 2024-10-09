@@ -85,7 +85,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5620b4136867a54e821f5ff002668d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noiseSettings: {fileID: 0}
+  shakeAmplitude: 1.2
+  shakeFrequency: 2
+  virtualCamera: {fileID: 2091251900590222608}
 --- !u!1 &1069515326516083239
 GameObject:
   m_ObjectHideFlags: 0
@@ -2108,6 +2110,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96d266ae20b74768bd6973bfa5bbb3c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxAmplitude: 0.6
+  maxFrequency: 1
   source: {fileID: 7823556242623334795}
   heartSound: {fileID: 8300000, guid: dc920437f5318484ea83b77918f68436, type: 3}
   soundCheckInterval: 2.5
@@ -2222,7 +2226,7 @@ Transform:
   m_GameObject: {fileID: 8493221306700816804}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 240.703, y: -12.485001, z: -10.914805}
+  m_LocalPosition: {x: 210.19, y: -1.0930004, z: -10.914805}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2263,7 +2267,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 3.5
+  orthographic size: 4.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

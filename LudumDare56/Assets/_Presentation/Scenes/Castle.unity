@@ -365,7 +365,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: a38eafee8f314a4469116a1bc351c9ed, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4266,11 +4266,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 581319556924960983, guid: 1e8cdf5addbf64c459a623fcf24a8a48, type: 3}
       propertyPath: m_Radius
-      value: 2.0448666
+      value: 1.7536854
       objectReference: {fileID: 0}
     - target: {fileID: 581319556924960983, guid: 1e8cdf5addbf64c459a623fcf24a8a48, type: 3}
       propertyPath: m_Offset.y
-      value: -1.2142034
+      value: -0.92302215
       objectReference: {fileID: 0}
     - target: {fileID: 4259683685412241156, guid: 1e8cdf5addbf64c459a623fcf24a8a48, type: 3}
       propertyPath: m_LocalScale.x
@@ -5616,6 +5616,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 576240128}
     m_Modifications:
+    - target: {fileID: 4565286935567324131, guid: 3a0873da6dca28b4fad6a0f16e8267eb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6886290233268218343, guid: 3a0873da6dca28b4fad6a0f16e8267eb, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.9
@@ -6138,7 +6142,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: -1688253211, guid: 4106b73560a8f3d43a905a665d3dde2f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -7714,6 +7718,10 @@ PrefabInstance:
     - target: {fileID: 3639130258760654427, guid: ba525f2314fef3247aac18eeb1ac7b2c, type: 3}
       propertyPath: m_Layer
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5402804405837213177, guid: ba525f2314fef3247aac18eeb1ac7b2c, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 5609304252922303576, guid: ba525f2314fef3247aac18eeb1ac7b2c, type: 3}
       propertyPath: interactLayer.m_Bits
