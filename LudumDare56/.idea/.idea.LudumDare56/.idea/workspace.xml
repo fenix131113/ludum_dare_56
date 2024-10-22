@@ -6,11 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="9b950bd6-5948-42cf-8b22-a7bfc86aa0cc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LudumDare56/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LudumDare56/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Fonts/vcrosdmonorusbyd SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Fonts/vcrosdmonorusbyd SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/-----GENERAL-----.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/-----GENERAL-----.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Scenes/Castle.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Scenes/Castle.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Scenes/Village.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Scenes/Village.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Player/HealthSoundsIndicator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Player/HealthSoundsIndicator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Utils/CameraShaker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Utils/CameraShaker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Scenes/EndScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Scenes/EndScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Scenes/Forest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Scenes/Forest.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Core/Core.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Core/Core.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Core/MainInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Core/MainInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Player/Death/Player.Death.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Player/Death/Player.Death.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Player/Death/PlayerDeathCheckerView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GameAssembly/Player/Death/PlayerDeathCheckerView.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +138,10 @@
       <workItem from="1728464326882" duration="96000" />
       <workItem from="1728464431967" duration="27338000" />
       <workItem from="1728507099844" duration="81000" />
-      <workItem from="1728507191905" duration="8291000" />
+      <workItem from="1728507191905" duration="8940000" />
+      <workItem from="1729612547763" duration="101000" />
+      <workItem from="1729612664959" duration="17000" />
+      <workItem from="1729612688708" duration="2857000" />
     </task>
     <servers />
   </component>

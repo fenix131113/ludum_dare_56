@@ -1,4 +1,5 @@
 ﻿using Core.Game;
+using Core.LanguageChoose;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
@@ -17,19 +18,21 @@ namespace Player.Death
 		
 		private PlayerHealth _playerHealth;
 		private GameStates _gameStates;
+		private DeathMessagesTranslations _deathMessagesTranslations;
 		
 		[Inject]
-		public void Construct(PlayerHealth playerHealth, GameStates gameStates)
+		public void Construct(PlayerHealth playerHealth, GameStates gameStates, DeathMessagesTranslations deathMessagesTranslations)
 		{
 			_playerHealth = playerHealth;
 			_gameStates = gameStates;
+			_deathMessagesTranslations = deathMessagesTranslations;
 		}
 
 		private void Awake() => Bind();
 
 		private void ShowDeadScreen(string reason)
 		{
-			deathText.text = reason;
+			deathText.text = PlayerPrefs.GetString("Language") == "RU" ? _deathMessagesTranslations.GetRuMessage(reason) : reason;
 			deathText.gameObject.SetActive(true);
 
 			var seq = DOTween.Sequence();

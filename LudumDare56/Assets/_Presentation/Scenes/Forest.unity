@@ -1142,6 +1142,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6718893090530672266, guid: c83af64c5222aa241b0eba94f10975e4, type: 3}
+      propertyPath: labels.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6718893090530672266, guid: c83af64c5222aa241b0eba94f10975e4, type: 3}
+      propertyPath: labels.Array.data[1]
+      value: 
+      objectReference: {fileID: 1282599775}
     - target: {fileID: 7256208665756622885, guid: c83af64c5222aa241b0eba94f10975e4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 240.703
@@ -1491,6 +1499,7 @@ GameObject:
   - component: {fileID: 1282599772}
   - component: {fileID: 1282599774}
   - component: {fileID: 1282599773}
+  - component: {fileID: 1282599775}
   m_Layer: 0
   m_Name: HideLabel
   m_TagString: Untagged
@@ -1568,9 +1577,9 @@ MonoBehaviour:
   m_fontSize: 3.5
   m_fontSizeBase: 3.5
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 1
+  m_fontSizeMax: 3.5
   m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -1652,6 +1661,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1282599775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282599771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 784e2a3cfb69492697b2f6315a42f137, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enText: Hide
+  ruText: "\u0421\u043F\u0440\u044F\u0442\u0430\u0442\u044C\u0441\u044F"
 --- !u!1 &1294123587
 GameObject:
   m_ObjectHideFlags: 0

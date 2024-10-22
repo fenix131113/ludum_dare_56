@@ -1,4 +1,5 @@
 using Core.Game;
+using Core.LanguageChoose;
 using Core.Menu;
 using Fireflies;
 using Fireflies.Data;
@@ -96,6 +97,11 @@ namespace Core
 
             Container.Bind<PlayerConfig>()
                 .FromInstance(playerConfig)
+                .AsSingle()
+                .NonLazy();
+
+            Container.Bind<DeathMessagesTranslations>()
+                .FromComponentInHierarchy()
                 .AsSingle()
                 .NonLazy();
         }
